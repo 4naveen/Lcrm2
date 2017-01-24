@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout"
+    android:padding="8dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/input_layout_product_name"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/products_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Product Name"
+            android:inputType="textNoSuggestions" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/input_layout_category"
+
+        android:layout_height="wrap_content">
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:hint="Category " />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/input_layout_status"
+
+        android:layout_height="wrap_content">
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:hint="Status " />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/input_layout_qHand"
+
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/qHand"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Quantity In Hand"
+            android:inputType="numberSigned" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/input_layout_qAvailable"
+
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/qAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Quantity Available"
+            android:inputType="numberSigned" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/input_layout_product_type"
+
+        android:layout_height="wrap_content">
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/product_type"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Product Type " />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/input_layout_sales_price"
+
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/sales_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sales Price"
+            android:inputType="numberSigned" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/input_layout_description"
+
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:hint="Description"
+            android:inputType="textNoSuggestions"
+            android:lines="5"
+            android:scrollHorizontally="false" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/ripple_btn"
+        android:text="SUBMIT"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+</LinearLayout>

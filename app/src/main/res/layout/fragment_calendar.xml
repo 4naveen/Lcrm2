@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp">
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="450dp">
+       <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+           xmlns:app="http://schemas.android.com/apk/res-auto"
+           android:id="@+id/calendarView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:mcv_showOtherDates="all"
+           app:mcv_selectionColor="#536DFE"
+           />
+   </FrameLayout>
+    <!--app:mcv_dateTextAppearance="@dimen/date_text_size"-->
+    <LinearLayout
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#3F51B5"
+        android:layout_marginTop="440dp"
+        android:layout_height="35dp"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="22sp"
+        android:layout_marginStart="15dp"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="15dp"
+        android:text="Title"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="Description"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="End Date"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:layout_marginStart="160dp"
+            android:layout_marginLeft="160dp"
+
+            />
+</LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv"
+        android:scrollbars="vertical"
+        android:layout_marginTop="480dp"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
+</FrameLayout>

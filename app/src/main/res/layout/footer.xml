@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:paddingLeft="200dp"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/margin"
+    android:background="@color/colorContracts"
+
+    android:paddingBottom="@dimen/margin">
+    <Button
+            android:id="@+id/footer_close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cancel"
+            android:textColor="#fff"
+            android:textSize="@dimen/button_text_size"
+            android:background="@drawable/selector_bg_button"/>
+
+    <Button
+            android:id="@+id/footer_exit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LogOut"
+            android:textColor="#fff"
+            android:textSize="@dimen/button_text_size"
+            android:background="@drawable/selector_bg_button"/>
+
+</LinearLayout>
+

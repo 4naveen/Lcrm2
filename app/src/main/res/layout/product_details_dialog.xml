@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="400dp"
+    android:layout_height="match_parent"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="23dp"
+    android:layout_gravity="center">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Details"
+        android:background="#DDDBE5"
+        android:textSize="25sp"
+        android:textColor="#212121"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginTop="50dp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/products_name"
+            android:lines="2"
+            android:text="fgdhfghg"
+            android:layout_marginTop="50dp"
+            android:textColor="#212121"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textSize="20sp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:text="dgfgfbhgf"
+            android:id="@+id/category"
+            android:textColor="#212121"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:text="Product Type"
+            android:textSize="20sp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:text="Stockable Product"
+            android:id="@+id/product_type"
+            android:textColor="#212121"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="20sp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:text="Normal"
+            android:id="@+id/status"
+            android:textColor="#212121"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:text="Quantity on Hand"
+            android:textSize="20sp"
+            android:singleLine="true"
+
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="43"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/qHand"
+            android:textColor="#212121"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:text="Quantity Available"
+            android:textSize="20sp"
+
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="53"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/qAvailable"
+            android:textColor="#212121"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:text="Sales Price"
+            android:textSize="20sp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:text="500$"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/sales_price"
+            android:textColor="#212121"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="20sp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:text="hifrgfdhghhfjjfgtjfghthjghnmjhgjhgjmggh"
+            android:id="@+id/description"
+            android:textColor="#212121"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="90dp">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ok"
+            android:text="ok"
+            android:textStyle="italic"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:layout_marginStart="110dp"
+            android:background="@drawable/detail_button_back_transparent"
+
+            android:layout_marginLeft="110dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

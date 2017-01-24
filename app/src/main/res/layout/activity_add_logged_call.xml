@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout"
+    android:layout_marginTop="20dp"
+    android:padding="8dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/input_layout_date"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Date"
+            android:inputType="date" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/input_layout_call_sumaary"
+
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/call_sumaary"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Call Summary"
+            android:inputType="textNoSuggestions"
+            android:lines="3" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/input_layout_customer"
+        android:layout_height="wrap_content">
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/contacts"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Contacts " />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/input_layout_responsible"
+
+        android:layout_height="wrap_content">
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/responsible"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Responsible " />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/input_layout_duration"
+
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/duration"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Duration"
+            android:inputType="numberSigned"
+            android:lines="3" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/ripple_btn"
+        android:text="SUBMIT"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+</LinearLayout>

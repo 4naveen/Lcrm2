@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="400dp"
+    android:layout_height="450dp"
+    android:layout_marginTop="8dp"
+
+    android:layout_gravity="center">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/staff_image"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/add"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:textSize="20sp"
+            android:layout_marginStart="70dp"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="70dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/first_name"
+            android:layout_marginTop="10dp"
+            android:textColor="#212121"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_marginStart="70dp"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="70dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+
+            android:id="@+id/last_name"
+            android:textColor="#212121"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_marginStart="70dp"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="70dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+
+            android:id="@+id/email"
+            android:textColor="#212121"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:layout_marginStart="70dp"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="#000"
+            android:layout_marginLeft="70dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:text=""
+            android:id="@+id/phone"
+            android:textColor="#212121"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:text="Permissions"
+            android:layout_marginStart="70dp"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="#000"
+            android:layout_marginLeft="70dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:text=""
+            android:id="@+id/permissions"
+            android:textColor="#212121"
+            />
+    </LinearLayout>
+
+</LinearLayout>

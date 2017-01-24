@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@mipmap/nav_dashboard"
+            android:title="Dashboard"
+            />
+
+        <item
+            android:id="@+id/opportnity"
+            android:icon="@mipmap/opp"
+            android:title="@string/opportnity"
+            />
+         <item
+                android:id="@+id/leads"
+                android:icon="@mipmap/nav_lead"
+                android:title="Leads"
+            />
+
+         <item
+            android:id="@+id/quotation"
+            android:icon="@mipmap/invoices"
+            android:title="Quotation" />
+        <item
+                android:id="@+id/Invoices"
+                android:icon="@mipmap/nav_invoices"
+                android:title="Invoices" />
+
+        <item
+            android:id="@+id/salesteam"
+            android:icon="@mipmap/salesteam"
+            android:title="Sales Teams" />
+        <item
+            android:id="@+id/LoggedCalls"
+            android:icon="@mipmap/calls"
+            android:title="Logged Calls" />
+
+    <item
+        android:id="@+id/salesorder"
+        android:icon="@mipmap/nav_salesorder"
+        android:title="Sales Order" />
+    <item
+        android:id="@+id/products"
+        android:icon="@mipmap/nav_products"
+        android:title="Products" />
+
+
+    <item
+        android:id="@+id/calender"
+        android:icon="@mipmap/nav_calendar"
+        android:title="Calender"/>
+
+    <item
+        android:id="@+id/customer"
+        android:icon="@mipmap/nav_customer"
+        android:title="Customer" />
+
+    <item
+        android:id="@+id/meetings"
+        android:icon="@mipmap/meeting"
+        android:title="Meetings" />
+    <item
+        android:id="@+id/tasks"
+        android:icon="@mipmap/ic_assignment_black_24dp"
+        android:title="Tasks" />
+
+</group>
+    <item
+        android:title="Configurations">
+        <menu>
+            <group android:checkableBehavior="none"
+                android:id="@+id/Configurations" >
+                <item
+                    android:id="@+id/contracts"
+                    android:icon="@mipmap/nav_contract"
+                    android:title="Contracts"/>
+                <item
+                    android:id="@+id/Staff"
+                    android:icon="@mipmap/salesteam"
+                    android:title="Staff"/>
+
+                <item
+                    android:id="@+id/quotation_template"
+                    android:icon="@mipmap/invoices"
+                    android:title="Quatation Template"/>
+                <item
+                    android:id="@+id/settings"
+                    android:icon="@mipmap/nav_setting"
+                    android:title="Settings"/>
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>
