@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/convert"
+        android:icon="@drawable/ic_convert"
+        app:showAsAction="never"
+        android:title="Convert to Quotation"
+        />
+
+
+    <item
+        android:id="@+id/email"
+        android:icon="@drawable/ic_forward"
+        app:showAsAction="never"
+        android:title="send by Email"
+        />
+</menu>

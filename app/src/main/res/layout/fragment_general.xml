@@ -12,7 +12,7 @@
         android:scrollbars="vertical">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <LinearLayout
@@ -135,7 +135,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/alloed_extension"
-            android:text="gif,jpg,jpeg,png,pdf,txt"
+            android:text=""
             android:singleLine="true"
             android:hint="Allowed file extension"/>
     </android.support.design.widget.TextInputLayout>
@@ -148,6 +148,7 @@
             android:id="@+id/min_character"
             android:inputType="number"
             android:singleLine="true"
+            android:text=""
             android:hint="Set minimum  characters for user first/last name"/>
     </android.support.design.widget.TextInputLayout>
 
@@ -167,7 +168,7 @@
         android:layout_height="wrap_content"
         android:text="December 5,2016"
         android:id="@+id/date1"
-        android:checked="true"/>
+       />
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -180,6 +181,7 @@
         android:text=" 05.12.2016."
         android:id="@+id/date3"
       />
+
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -210,8 +212,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="05:53"
-        android:id="@+id/time1"
-            android:checked="true"/>
+            android:id="@+id/time1"
+            />
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -295,18 +297,7 @@
            android:visibility="invisible"
            android:hint="Email server password "/>
    </LinearLayout>
-
 </LinearLayout>
-       <!-- <Button
-            android:id="@+id/ok"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dip"
-            android:background="@drawable/ripple_btn"
-            android:text="Ok"
-            android:textColor="#ffffff"
-            android:textSize="20sp" />-->
     </LinearLayout>
     </ScrollView>
 </android.support.design.widget.CoordinatorLayout>

@@ -1,126 +1,228 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_add_customer"
+    android:id="@+id/layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:paddingTop="5dp"
-        >
+    android:layout_height="match_parent">
 
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_layout_company_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
 
-            <EditText
-                android:id="@+id/fname"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Company Name"
-                android:singleLine="true" />
-
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_layout_email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Email"
-                android:singleLine="true" />
-        </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_layout_address"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/address"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Address"
-                android:singleLine="true" />
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_layout_phone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/phone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Phone"
-                android:inputType="textPassword"
-                android:singleLine="true" />
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_layout_main_contact_person"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/contact_person"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Main contact Person"
-                android:inputType="textPassword"
-                android:singleLine="true" />
-        </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_layout_salesteam"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <com.weiwangcn.betterspinner.library.BetterSpinner
-                android:id="@+id/salesteam"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:hint="SalesTeam" />
-        </android.support.design.widget.TextInputLayout>
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Logo"
-                android:layout_marginStart="5dp"
-                android:textSize="20sp"
-                android:paddingTop="15dp"
-                android:layout_marginLeft="5dp" />
-            <ImageView
-                android:layout_width="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.3"
+                    android:text="@string/company_name"
+                    android:textSize="20sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_company_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7">
+
+                    <EditText
+                        android:id="@+id/company_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/upload"
-                android:paddingTop="10dp"
-                android:id="@+id/upload"
-                android:layout_marginStart="40dp"
-                android:layout_marginLeft="40dp" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.3"
+                    android:text="@string/email"
+                    android:textSize="20sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7">
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.3"
+                    android:text="@string/address"
+                    android:textSize="20sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7">
+
+                    <EditText
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.3"
+                    android:text="@string/phone"
+                    android:textSize="20sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7">
+
+                    <EditText
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.3"
+                    android:text="@string/main_contact_person"
+                    android:textSize="20sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_main_contact_person"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7">
+
+                    <com.weiwangcn.betterspinner.library.BetterSpinner
+                        android:id="@+id/mcp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.3"
+                    android:text="@string/sales_team"
+                    android:textSize="20sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_salesteam"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7">
+
+                    <com.weiwangcn.betterspinner.library.BetterSpinner
+                        android:id="@+id/salesteam"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:paddingTop="15dp"
+                    android:text="Logo"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/upload"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginStart="40dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/upload" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dip"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ripple_btn"
+                android:text="@string/save"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
         </LinearLayout>
-        <Button
-            android:id="@+id/submit"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dip"
-            android:background="@drawable/ripple_btn"
-            android:text="SUBMIT"
-            android:textColor="#ffffff"
-            android:textSize="20sp" />
-    </LinearLayout>
+    </ScrollView>
 </LinearLayout>

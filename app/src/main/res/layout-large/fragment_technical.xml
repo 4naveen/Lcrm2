@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFCCBC"
+>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_gravity="center"
+        android:id="@+id/cv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardElevation="1dp"
+        card_view:cardUseCompatPadding="true"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:textColor="#555"
+                    android:text="We're here to help you! "
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:textSize="22sp"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Technical Issue"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:text="Please fill below information and submit.We'll surely look into this and get back to you!"
+                    android:layout_marginLeft="10dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="#555"
+                    android:text="Mention Phone Brand(E.g. Moto G)"
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_brand"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/brand"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Your Answer"
+                        android:selectAllOnFocus="true"
+                        android:inputType="textEmailAddress"
+                        android:theme="@style/MyEditTextTheme"
+
+                        android:singleLine="true"
+                        />
+                </android.support.design.widget.TextInputLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18sp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:textColor="#555"
+                    android:text="Mention Android Version"
+                    android:layout_marginLeft="10dp" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_version"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/version"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Your Answer"
+                        android:inputType="textEmailAddress"
+                        android:theme="@style/MyEditTextTheme"
+
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18sp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#555"
+                    android:gravity="center"
+                    android:text="Which Screen?"
+                    android:layout_marginLeft="10dp" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_screen"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content">
+
+                    <com.weiwangcn.betterspinner.library.BetterSpinner
+                        android:id="@+id/screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:hint="Dashboard" />
+                </android.support.design.widget.TextInputLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18sp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:textColor="#555"
+                    android:text="Describe the problem in as much as details"
+                    android:layout_marginLeft="10dp" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_decription"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/description"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Your Answer"
+                        android:inputType="textEmailAddress"
+                        android:theme="@style/MyEditTextTheme"
+
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="BACK"
+                        android:background="@color/md_btn_selected_dark"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+                    <Button
+                        android:id="@+id/submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="SUBMIT"
+                        android:background="@color/colorPrimary"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

@@ -29,7 +29,7 @@
             android:icon="@mipmap/invoices"
             android:title="Quotation" />
         <item
-            android:id="@+id/Invoices"
+            android:id="@+id/invoices"
             android:icon="@mipmap/nav_invoices"
             android:title="Invoices"
             android:visible="false"

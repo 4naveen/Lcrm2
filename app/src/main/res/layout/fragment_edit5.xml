@@ -5,10 +5,21 @@
     android:id="@+id/layout"
     android:orientation="vertical"
     android:padding="8dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start Date"/>
+        android:text="@string/start_date"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,7 +27,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="End Date"/>
+        android:text="@string/end_date"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,7 +36,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Description"/>
+        android:text="@string/description"/>
 
     <EditText
         android:id="@+id/description"
@@ -44,7 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/text_customer"
-            android:text="Customer"/>
+            android:text="@string/customer"/>
 
         <com.weiwangcn.betterspinner.library.BetterSpinner
             android:id="@+id/company"
@@ -61,7 +72,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/text_status"
-            android:text="Responsible"/>
+            android:text="@string/responsible"/>
 
         <com.weiwangcn.betterspinner.library.BetterSpinner
             android:id="@+id/responsible"
@@ -72,12 +83,14 @@
     </LinearLayout>
     <Button
         android:id="@+id/submit"
-        android:layout_width="300dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dip"
         android:background="@drawable/ripple_btn"
-        android:text="SAVE"
+        android:text="@string/save"
         android:textColor="#ffffff"
         android:textSize="20sp" />
+    </LinearLayout>
+    </ScrollView>
 </LinearLayout>

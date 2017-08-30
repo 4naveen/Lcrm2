@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<android.support.v7.widget.CardView
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv"
     android:layout_width="match_parent"
     android:layout_height="80dp"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_gravity="center"
-    android:id="@+id/cv"
     card_view:cardBackgroundColor="#ffffff"
     card_view:cardCornerRadius="5dp"
     card_view:cardElevation="3dp"
-    card_view:cardUseCompatPadding="true"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    card_view:cardUseCompatPadding="true">
 
     <com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:swipe="http://schemas.android.com/apk/res-auto"
@@ -28,42 +27,46 @@
 
             android:layout_height="match_parent"
             android:weightSum="2">
+
             <LinearLayout
+                android:id="@+id/layout_edit"
                 android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#3693D0"
-                android:id="@+id/layout_edit"
-                android:orientation="vertical"
-                android:layout_height="match_parent">
+                android:orientation="vertical">
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@mipmap/ic_edit"
-                    />
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/ic_edit" />
+
                 <TextView
                     android:id="@+id/tvEdit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Edit"
                     android:layout_gravity="center_horizontal"
-                    android:textColor="#fff"
-                    />
+                    android:text="Edit"
+                    android:textColor="#fff" />
             </LinearLayout>
+
             <LinearLayout
+                android:id="@+id/layout_delete"
                 android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#36CF8E"
-                android:id="@+id/layout_delete"
-                android:orientation="vertical"
-                android:layout_height="match_parent">
+                android:orientation="vertical">
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@mipmap/ic_delete"/>
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/ic_delete" />
+
                 <TextView
                     android:id="@+id/tvDelete"
                     android:layout_width="wrap_content"
@@ -77,77 +80,77 @@
         <!-- Another Bottom View For Left to Right -->
 
 
-
         <!-- Top View,  Row itemView of RecyclerView -->
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp">
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="0.9"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
 
-
-            <android.support.v7.widget.AppCompatCheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/check"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="jvkjbvjjjfjfkjbjjhhuii"
-                android:textSize="20sp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="20dp"
-                android:textColor="#2f2f2f"
-                android:id="@+id/description"/>
-          </LinearLayout>
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="March 14,2016"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="10dp"
-                    android:textSize="20sp"
-                    android:textColor="#2f2f2f"
-                    android:id="@+id/deadline"/>
+                    android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="vvvviubhui"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="40dp"
-                android:textSize="20sp"
-                android:textColor="#2f2f2f"
-                android:id="@+id/name"/>
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:singleLine="true"
+                        android:text="jvkjbvjjjfjfkjbjjhhuii"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/deadline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="March 14,2016"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="40dp"
+                        android:text="vvvviubhui"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
-        </LinearLayout>
             <ImageView
+                android:id="@+id/arrow"
                 android:layout_width="0dp"
                 android:layout_height="20dp"
-                android:id="@+id/arrow"
-                android:src="@mipmap/left"
+                android:layout_gravity="center"
                 android:layout_marginLeft="3dp"
                 android:layout_weight="0.1"
-                android:layout_gravity="center" />
-</LinearLayout>
+                android:src="@mipmap/left" />
+        </LinearLayout>
     </com.daimajia.swipe.SwipeLayout>
 </android.support.v7.widget.CardView>

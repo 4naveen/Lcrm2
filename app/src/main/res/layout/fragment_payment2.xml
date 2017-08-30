@@ -5,6 +5,10 @@
     android:id="@+id/coordinator"
     android:layout_marginTop="65dp"
   >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -179,4 +183,5 @@
     </android.support.design.widget.TextInputLayout>
 
 </LinearLayout>
+    </ScrollView>
 </android.support.design.widget.CoordinatorLayout>

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/layout"
-    tools:context="com.project.naveen.lcrm.opportunities.DetailsFragment">
+    tools:context="com.project.lorvent.lcrm.fragments.admin.details.OpportunityDetailsFragment">
 
 
     <LinearLayout

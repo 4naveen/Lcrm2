@@ -15,7 +15,7 @@
         <android.support.design.widget.AppBarLayout
             android:id="@+id/app_bar"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="160dp"
             android:fitsSystemWindows="true">
 
             <android.support.design.widget.CollapsingToolbarLayout
@@ -31,7 +31,7 @@
                     android:fitsSystemWindows="true"
                     app:layout_collapseMode="parallax"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/salesorder1_back"/>
+                    android:src="@drawable/salesorder_back"/>
 
             </android.support.design.widget.CollapsingToolbarLayout>
         </android.support.design.widget.AppBarLayout>
@@ -40,22 +40,24 @@
             android:id="@+id/bottom_wrapper"
             android:layout_width="match_parent"
             android:orientation="horizontal"
-            android:background="#3F51B5"
+            android:background="@color/colorPrimary"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            android:layout_height="35dp"
+            android:layout_height="wrap_content"
             >
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:textSize="20sp"
+                android:textSize="18sp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginStart="10dp"
                 android:textColor="#ffffff"
                 android:layout_marginLeft="10dp"
                 android:text="Customer"
                 />
 
-            <TextView
+           <!-- <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
@@ -64,16 +66,18 @@
                 android:textSize="20sp"
                 android:layout_marginStart="150dp"
                 android:layout_marginLeft="150dp"
-                />
+                />-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:text="Total"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
                 android:textColor="#ffffff"
-                android:textSize="20sp"
-                android:layout_marginStart="80dp"
-                android:layout_marginLeft="80dp"
+                android:textSize="18sp"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
                 />
         </LinearLayout>
         <android.support.v7.widget.RecyclerView
@@ -81,12 +85,10 @@
             android:layout_height="match_parent"
             android:id="@+id/rv"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="35dp"
             android:scrollbars="vertical"
             >
         </android.support.v7.widget.RecyclerView>
-
-
     </android.support.design.widget.CoordinatorLayout>
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

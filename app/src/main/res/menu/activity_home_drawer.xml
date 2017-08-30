@@ -80,7 +80,10 @@
                     android:id="@+id/Staff"
                     android:icon="@mipmap/salesteam"
                     android:title="Staff"/>
-
+                <item
+                    android:id="@+id/email_template"
+                    android:icon="@mipmap/ic_email_black"
+                    android:title="Email Template"/>
                 <item
                     android:id="@+id/quotation_template"
                     android:icon="@mipmap/invoices"

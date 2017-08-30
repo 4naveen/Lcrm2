@@ -5,7 +5,7 @@
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_gravity="center"
         android:id="@+id/cv"
@@ -21,34 +21,34 @@
             >
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="0.35"
+                android:layout_weight="0.5"
                 android:layout_height="wrap_content"
                 android:id="@+id/opp"
                 android:layout_marginStart="3dp"
                 android:ellipsize="end"
                 android:scrollHorizontally="true"
                 android:singleLine="true"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:layout_marginLeft="3dp" />
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="0.35"
+                android:layout_weight="0.4"
                 android:ellipsize="end"
                 android:layout_marginStart="20dp"
                 android:singleLine="true"
                 android:layout_height="wrap_content"
                 android:id="@+id/sales_team"
-                android:textSize="20sp"
-                android:layout_marginLeft="20dp" />
-            <TextView
+                android:textSize="18sp"
+                 android:layout_marginLeft="20dp" />
+          <!-- <TextView
                 android:layout_width="0dp"
                 android:layout_weight="0.3"
                 android:ellipsize="end"
                 android:singleLine="true"
                 android:layout_height="wrap_content"
                 android:id="@+id/email"
-                android:textSize="20sp"/>
-
+                android:textSize="18sp"/>
+-->
             <ImageView
                 android:layout_width="0dp"
                 android:src="@drawable/ic_action_navigation_chevron_right"

@@ -5,11 +5,16 @@
     android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingLeft="10dp"
+        android:layout_marginBottom="10dp"
         android:paddingRight="10dp"
         android:paddingTop="5dp"
         >
@@ -24,8 +29,10 @@
                 android:id="@+id/first_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="First Name"
+                android:hint="@string/first_name"
                 android:inputType="text"
+                android:theme="@android:style/Theme.Holo.Light"
+
                 android:singleLine="true" />
 
         </android.support.design.widget.TextInputLayout>
@@ -39,8 +46,10 @@
                 android:id="@+id/last_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="LastName"
+                android:hint="@string/last_name"
                 android:inputType="text"
+                android:theme="@android:style/Theme.Holo.Light"
+
                 android:singleLine="true" />
         </android.support.design.widget.TextInputLayout>
         <android.support.design.widget.TextInputLayout
@@ -53,7 +62,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:hint="Email"
+                android:hint="@string/email"
+                android:theme="@android:style/Theme.Holo.Light"
+
                 android:singleLine="true" />
         </android.support.design.widget.TextInputLayout>
 
@@ -68,7 +79,9 @@
                 android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password"
+                android:hint="@string/password"
+                android:theme="@android:style/Theme.Holo.Light"
+
                 android:inputType="textPassword"
                 android:singleLine="true" />
         </android.support.design.widget.TextInputLayout>
@@ -83,7 +96,9 @@
                 android:id="@+id/password_confirm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password Confirmation"
+                android:hint="@string/confirm_password"
+                android:theme="@android:style/Theme.Holo.Light"
+
                 android:inputType="textPassword"
                 android:singleLine="true" />
         </android.support.design.widget.TextInputLayout>
@@ -96,20 +111,37 @@
                 android:id="@+id/phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Phone"
+                android:hint="@string/phone"
+                android:theme="@android:style/Theme.Holo.Light"
+
                 android:inputType="phone"
                 android:singleLine="true" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_layout_contact_person"
+            android:id="@+id/input_layout_salesteam"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <com.weiwangcn.betterspinner.library.BetterSpinner
                 android:id="@+id/salesteam"
                 android:layout_width="match_parent"
+                android:theme="@android:style/Theme.Holo.Light"
+
                 android:layout_height="40dp"
-                android:hint="SalesTeam" />
+                android:hint="@string/sales_team" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.weiwangcn.betterspinner.library.BetterSpinner
+                android:id="@+id/company"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:theme="@android:style/Theme.Holo.Light"
+
+                android:hint="@string/company_name" />
         </android.support.design.widget.TextInputLayout>
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -118,7 +150,7 @@
             <android.support.v7.widget.AppCompatCheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Main Contact Person"
+                android:text="@string/main_contact_person"
                 android:id="@+id/mcp"
                 android:textSize="15sp"
                 />
@@ -130,7 +162,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Photo"
+                android:text="@string/photo"
                 android:layout_marginStart="5dp"
                 android:textSize="20sp"
                 android:paddingTop="15dp"
@@ -146,13 +178,15 @@
         </LinearLayout>
         <Button
             android:id="@+id/submit"
-            android:layout_width="300dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dip"
             android:background="@drawable/ripple_btn"
-            android:text="SUBMIT"
+            android:text="@string/submit"
+            android:layout_marginBottom="10dp"
             android:textColor="#ffffff"
             android:textSize="20sp" />
     </LinearLayout>
+    </ScrollView>
 </LinearLayout>

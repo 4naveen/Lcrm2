@@ -4,28 +4,49 @@
     android:layout_height="match_parent"
     android:id="@+id/layout"
     android:orientation="vertical"
-    android:padding="8dp">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Start Date"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/start_date"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="End Date"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/end_date"/>
+    android:padding="10dp">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_start_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/start_date"
+        android:theme="@android:style/Theme.Holo.Light"
+
+        android:id="@+id/start_date"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_end_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/end_date"
+        android:theme="@android:style/Theme.Holo.Light"
+
+        android:id="@+id/end_date"/>
+</android.support.design.widget.TextInputLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Description"/>
+        android:text="@string/description"/>
 
     <EditText
         android:id="@+id/description"
@@ -36,48 +57,47 @@
         android:inputType="textMultiLine"
         android:scrollHorizontally="false"
         />
-    <LinearLayout
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_customer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/text_customer"
-            android:text="Customer"/>
+        >
 
         <com.weiwangcn.betterspinner.library.BetterSpinner
             android:id="@+id/company"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:theme="@android:style/Theme.Holo.Light"
+
             android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:hint=" " />
-    </LinearLayout>
-    <LinearLayout
+            android:hint="@string/customer" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_responsible"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/text_status"
-            android:text="Responsible"/>
+        >
 
         <com.weiwangcn.betterspinner.library.BetterSpinner
             android:id="@+id/responsible"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:theme="@android:style/Theme.Holo.Light"
+
             android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:hint=" " />
-    </LinearLayout>
+            android:hint="@string/responsible" />
+    </android.support.design.widget.TextInputLayout>
     <Button
         android:id="@+id/submit"
-        android:layout_width="300dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dip"
         android:background="@drawable/ripple_btn"
-        android:text="SUBMIT"
+        android:text="@string/submit"
         android:textColor="#ffffff"
         android:textSize="20sp" />
+            </LinearLayout>
+    </ScrollView>
 </LinearLayout>

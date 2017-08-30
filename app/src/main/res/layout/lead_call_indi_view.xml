@@ -130,7 +130,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="0.5"
                         android:id="@+id/company"
-                        android:textSize="20sp"
+                        android:textSize="18sp"
                         android:layout_marginStart="10dp"
                         android:layout_marginLeft="10dp"
 
@@ -143,7 +143,7 @@
                         android:layout_marginStart="25dp"
                         android:layout_marginLeft="250dp"
                         android:id="@+id/responsible"
-                        android:textSize="20sp"
+                        android:textSize="18sp"
 
                         />
                 </LinearLayout>
@@ -166,6 +166,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                     android:id="@+id/layout_date">
+
+
             </LinearLayout>
 
             </LinearLayout>

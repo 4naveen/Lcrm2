@@ -3,24 +3,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/layout"
-    tools:context="com.project.naveen.lcrm.opportunities.DetailsFragment">
-
+    tools:context="com.project.lorvent.lcrm.fragments.admin.details.OpportunityDetailsFragment">
     <android.support.v7.widget.CardView
         android:id="@+id/cv"
-        android:layout_width="550dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         card_view:cardBackgroundColor="#fff"
         card_view:cardCornerRadius="1dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="10dp"
         card_view:cardUseCompatPadding="true"
-        android:layout_marginLeft="25dp">
+        android:layout_marginLeft="10dp">
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbars="vertical">
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,20 +29,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp"
+                android:padding="7dp"
                 >
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.4"
                     android:text="Opportunity"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000000"
                     />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="0.1"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000"
                     android:textStyle="bold"
                     android:layout_height="wrap_content"
@@ -56,7 +55,7 @@
                     android:id="@+id/opp"
                     android:lines="2"
                     android:text=" "
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#263238"
                     />
 
@@ -66,21 +65,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp"
+                android:padding="7dp"
                 >
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.4"
                     android:text="Next Action Date"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
 
                     android:textColor="#263238"
                     />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="0.1"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000"
                     android:textStyle="bold"
                     android:layout_height="wrap_content"
@@ -92,7 +91,7 @@
                     android:padding="2dp"
                     android:text=" "
                     android:id="@+id/action_date"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#263238"
                     />
 
@@ -102,7 +101,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp"
+                android:padding="7dp"
                 >
                 <TextView
                     android:layout_width="0dp"
@@ -110,13 +109,13 @@
                     android:layout_weight="0.4"
                     android:text="Next ACtion"
 
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000000"
                     />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="0.1"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000"
                     android:textStyle="bold"
                     android:layout_height="wrap_content"
@@ -128,7 +127,7 @@
                     android:padding="2dp"
                     android:id="@+id/next_action"
                     android:text=" "
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#263238"
                     />
 
@@ -138,7 +137,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp"
+                android:padding="7dp"
                 >
                 <TextView
                     android:layout_width="0dp"
@@ -146,13 +145,13 @@
                     android:layout_weight="0.4"
                     android:text="Stages"
 
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000000"
                     />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="0.1"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000"
                     android:textStyle="bold"
                     android:layout_height="wrap_content"
@@ -162,7 +161,7 @@
                     android:layout_weight="0.5"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:text=" "
                     android:id="@+id/stages"
                     android:textColor="#263238"
@@ -174,7 +173,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp"
+                android:padding="7dp"
                 >
                 <TextView
                     android:layout_width="0dp"
@@ -182,13 +181,13 @@
                     android:layout_weight="0.4"
                     android:text="Leads"
 
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000000"
                     />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="0.1"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000"
                     android:textStyle="bold"
                     android:layout_height="wrap_content"
@@ -200,7 +199,7 @@
                     android:padding="2dp"
                     android:id="@+id/leads"
 
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#263238"
                     />
 
@@ -210,7 +209,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp"
+                android:padding="7dp"
                 >
                 <TextView
                     android:layout_width="0dp"
@@ -218,13 +217,13 @@
                     android:layout_weight="0.4"
                     android:text="Expected Revenue"
 
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000000"
                     />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="0.1"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000"
                     android:textStyle="bold"
                     android:layout_height="wrap_content"
@@ -236,7 +235,7 @@
                     android:padding="2dp"
                     android:id="@+id/expeted_revenue"
                     android:text=""
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#263238"
                     />
 
@@ -246,7 +245,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp"
+                android:padding="7dp"
                 >
                 <TextView
                     android:layout_width="0dp"
@@ -254,13 +253,13 @@
                     android:layout_weight="0.4"
                     android:text="Customer"
 
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000000"
                     />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="0.1"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000"
                     android:textStyle="bold"
                     android:layout_height="wrap_content"
@@ -273,7 +272,7 @@
                     android:text=" "
                     android:id="@+id/customer"
 
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#263238"
                     />
 
@@ -283,20 +282,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp"
+                android:padding="7dp"
                 >
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.4"
                     android:text="Email"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000000"
                     />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="0.1"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000"
                     android:textStyle="bold"
                     android:layout_height="wrap_content"
@@ -308,7 +307,7 @@
                     android:padding="2dp"
                     android:text=" "
                     android:id="@+id/email"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#263238"
                     />
             </LinearLayout>
@@ -316,20 +315,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp"
+                android:padding="7dp"
                 >
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.4"
                     android:text="Mobile"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000000"
                     />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="0.1"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000"
                     android:textStyle="bold"
                     android:layout_height="wrap_content"
@@ -341,7 +340,7 @@
                     android:padding="2dp"
                     android:text=" "
                     android:id="@+id/mobile"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#263238"
                     />
             </LinearLayout>
@@ -350,20 +349,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp"
+                android:padding="7dp"
                 >
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.4"
                     android:text="Sales Person"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000000"
                     />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="0.1"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000"
                     android:textStyle="bold"
                     android:layout_height="wrap_content"
@@ -375,7 +374,7 @@
                     android:padding="2dp"
                     android:text=" "
                     android:id="@+id/salesperson"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#263238"
                     />
             </LinearLayout>
@@ -383,20 +382,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp"
+                android:padding="7dp"
                 >
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.4"
                     android:text="Sales Team"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000000"
                     />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="0.1"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000"
                     android:textStyle="bold"
                     android:layout_height="wrap_content"
@@ -408,7 +407,7 @@
                     android:padding="2dp"
                     android:text=" "
                     android:id="@+id/salesteam"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#263238"
                     />
             </LinearLayout>
@@ -416,20 +415,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp"
+                android:padding="7dp"
                 >
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.4"
                     android:text="Priority"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000000"
                     />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="0.1"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000"
                     android:textStyle="bold"
                     android:layout_height="wrap_content"
@@ -441,7 +440,7 @@
                     android:padding="2dp"
                     android:text=" "
                     android:id="@+id/priority"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#263238"
                     />
             </LinearLayout>
@@ -449,20 +448,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp"
+                android:padding="7dp"
                 >
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.4"
                     android:text="Call"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000000"
                     />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="0.1"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000"
                     android:textStyle="bold"
                     android:layout_height="wrap_content"
@@ -474,7 +473,7 @@
                     android:padding="2dp"
                     android:text=" "
                     android:id="@+id/oppcall"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#263238"
                     />
             </LinearLayout>
@@ -482,20 +481,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp"
+                android:padding="7dp"
                 >
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.4"
                     android:text="Meeting"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000000"
                     />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="0.1"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000"
                     android:textStyle="bold"
                     android:layout_height="wrap_content"
@@ -507,7 +506,7 @@
                     android:padding="2dp"
                     android:text=" "
                     android:id="@+id/oppmeeting"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#263238"
                     />
             </LinearLayout>

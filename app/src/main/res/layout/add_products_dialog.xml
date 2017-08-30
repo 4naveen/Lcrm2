@@ -5,6 +5,8 @@
     android:layout_width="350dp"
     android:layout_height="wrap_content"
     android:layout_marginTop="8dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     android:layout_marginBottom="23dp"
     android:layout_gravity="center">
 
@@ -86,30 +88,5 @@
 
     </android.support.design.widget.TextInputLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="15dp">
-
-        <Button
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/cancel"
-            android:text="Cancel"
-            android:layout_marginStart="45dp"
-            android:textColor="#FF6E40"
-            android:textSize="18sp"
-            android:layout_marginLeft="45dp" />
-        <Button
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/submit"
-            android:layout_marginStart="25dp"
-            android:text="Add"
-            android:textColor="@color/colorPrimary"
-            android:textSize="18sp"
-            android:layout_marginLeft="25dp" />
-    </LinearLayout>
 
 </LinearLayout>

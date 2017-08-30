@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#4285f4</color>
+    <color name="colorPrimaryDark">#356ac3</color>
     <color name="textColorPrimary">#FFFFFF</color>
     <color name="colorControlNormal">#2196F3</color>
     <color name="colorAccent">#FF4081</color>
@@ -35,6 +35,7 @@
     <color name="colorOpp">#FF7043</color>
     <color name="colorCustomer">#4CAF50</color>
     <color name="cust_bar_graph_color">#DD2C00</color>
+    <color name="error">#B71C1C</color>
 
     <!-- Screens background color-->
     <color name="bg_screen1">#20d2bb</color>

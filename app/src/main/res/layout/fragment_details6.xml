@@ -3,17 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/layout"
-    tools:context="com.project.naveen.lcrm.meetings.DetailsFragment">
+    tools:context="com.project.lorvent.lcrm.fragments.admin.details.MeetingDetailsFragment">
 
     <android.support.v7.widget.CardView
         android:id="@+id/cv"
-        android:layout_width="550dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         card_view:cardBackgroundColor="#fff"
         card_view:cardCornerRadius="1dp"
         card_view:cardElevation="1dp"
-        android:padding="20dp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
         android:layout_gravity="center"
         card_view:cardUseCompatPadding="true">
         <LinearLayout
@@ -24,16 +25,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp"
+                android:padding="7dp"
                 >
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.5"
+                    android:layout_weight="0.4"
                     android:text="Meeting Subject"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#263238"
                     />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text=":"/>
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="0.5"
@@ -41,7 +50,7 @@
                     android:padding="2dp"
                     android:text=""
                     android:id="@+id/meeting_subject"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000000"
                     />
 
@@ -50,16 +59,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp"
+                android:padding="7dp"
                 >
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.5"
+                    android:layout_weight="0.4"
                     android:text="Attendies"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#263238"
                     />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text=":"/>
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="0.5"
@@ -67,7 +84,7 @@
                     android:padding="2dp"
                     android:text=""
                     android:id="@+id/attendies"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000000"
                     />
 
@@ -77,17 +94,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp"
+                android:padding="7dp"
                 >
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.5"
+                    android:layout_weight="0.4"
                     android:text="Responsible"
 
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#263238"
                     />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text=":"/>
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="0.5"
@@ -95,7 +120,7 @@
                     android:padding="2dp"
                     android:text=""
                     android:id="@+id/responsible"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000000"
                     />
 
@@ -105,17 +130,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp"
+                android:padding="7dp"
                 >
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.5"
+                    android:layout_weight="0.4"
                     android:text="Starting Date"
 
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#263238"
                     />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text=":"/>
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="0.5"
@@ -123,7 +156,7 @@
                     android:padding="2dp"
                     android:text=""
 
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:id="@+id/start_date"
                     android:textColor="#000000"
                     />
@@ -134,16 +167,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp"
+                android:padding="7dp"
                 >
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.5"
+                    android:layout_weight="0.4"
                     android:text="Ending Date"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#263238"
                     />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text=":"/>
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="0.5"
@@ -151,7 +192,7 @@
                     android:padding="2dp"
                     android:id="@+id/end_date"
                     android:text=""
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000000"
                     />
 
@@ -161,16 +202,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp"
+                android:padding="7dp"
                 >
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.5"
+                    android:layout_weight="0.4"
                     android:text="Location"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#263238"
                     />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text=":"/>
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="0.5"
@@ -178,7 +227,7 @@
                     android:padding="2dp"
                     android:id="@+id/location"
                     android:text=""
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000000"
                     />
 
@@ -188,16 +237,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp"
+                android:padding="7dp"
                 >
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.5"
+                    android:layout_weight="0.4"
                     android:text="Duration"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#263238"
                     />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text=":"/>
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="0.5"
@@ -205,7 +262,7 @@
                     android:padding="2dp"
                     android:id="@+id/duration"
                     android:text=""
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000000"
                     />
 
@@ -214,16 +271,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp"
+                android:padding="7dp"
                 >
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.5"
+                    android:layout_weight="0.4"
                     android:text="Description"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#263238"
                     />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text=":"/>
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="0.5"
@@ -231,7 +296,7 @@
                     android:padding="2dp"
                     android:text=" "
                     android:id="@+id/description"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#000000"
                     />
             </LinearLayout>

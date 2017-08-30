@@ -30,7 +30,7 @@
                     android:layout_width="match_parent"
                     android:inputType="textNoSuggestions"
                     android:layout_height="wrap_content"
-                    android:hint="FirstName"
+
                     android:singleLine="true" />
 
             </android.support.design.widget.TextInputLayout>
@@ -45,7 +45,7 @@
                     android:layout_width="match_parent"
                     android:inputType="textNoSuggestions"
                     android:layout_height="wrap_content"
-                    android:hint="LastName"
+
                     android:singleLine="true" />
             </android.support.design.widget.TextInputLayout>
 
@@ -59,7 +59,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress"
-                    android:hint="Email"
+
                     android:singleLine="true" />
             </android.support.design.widget.TextInputLayout>
 
@@ -73,7 +73,7 @@
                     android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Password"
+
                     android:inputType="textPassword"
                     android:singleLine="true" />
             </android.support.design.widget.TextInputLayout>
@@ -87,7 +87,7 @@
                     android:id="@+id/confirm_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Confirm Password"
+
                     android:inputType="textPassword"
                     android:singleLine="true" />
             </android.support.design.widget.TextInputLayout>
@@ -98,7 +98,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Photo"
+                    android:text="@string/photo"
                     android:layout_marginStart="5dp"
                     android:textSize="20sp"
                     android:paddingTop="15dp"
@@ -116,7 +116,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Permissions"
+                android:text="@string/permission"
                 android:id="@+id/permission"
                 android:layout_marginStart="5dp"
                 android:textSize="20sp"
@@ -147,7 +147,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Sales Teams"
+                            android:text="@string/sales_teams"
                             android:layout_marginStart="1dp"
                             android:textSize="18sp"
                             android:textColor="@color/cardview_dark_background"
@@ -195,7 +195,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Leads"
+                            android:text="@string/leads"
                             android:textColor="@color/cardview_dark_background"
                             android:layout_marginStart="1dp"
                             android:textSize="18sp"
@@ -248,7 +248,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Opportunity"
+                            android:text="@string/opportnity"
                             android:layout_marginStart="1dp"
                             android:textSize="18sp"
                             android:textColor="@color/cardview_dark_background"
@@ -297,7 +297,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Logged Calls"
+                            android:text="@string/loggedCalls"
                             android:textColor="@color/cardview_dark_background"
                             android:layout_marginStart="1dp"
                             android:textSize="18sp"
@@ -351,7 +351,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Meetings"
+                            android:text="@string/meetings"
                             android:layout_marginStart="1dp"
                             android:textSize="18sp"
                             android:textColor="@color/cardview_dark_background"
@@ -398,7 +398,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Products"
+                            android:text="@string/products"
                             android:textColor="@color/cardview_dark_background"
                             android:layout_marginStart="1dp"
                             android:textSize="18sp"
@@ -499,7 +499,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="SalesOrder"
+                            android:text="@string/sales_orders"
                             android:textColor="@color/cardview_dark_background"
                             android:layout_marginStart="1dp"
                             android:textSize="18sp"
@@ -552,7 +552,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Invoices"
+                            android:text="@string/invoices"
                             android:layout_marginStart="1dp"
                             android:textSize="18sp"
                             android:textColor="@color/cardview_dark_background"
@@ -601,7 +601,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Contracts"
+                            android:text="@string/contracts"
                             android:textColor="@color/cardview_dark_background"
                             android:layout_marginStart="1dp"
                             android:textSize="18sp"
@@ -654,7 +654,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Staffs"
+                            android:text="@string/staffs"
                             android:layout_marginStart="1dp"
                             android:textSize="18sp"
                             android:textColor="@color/cardview_dark_background"
@@ -701,7 +701,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Contacts"
+                            android:text="@string/contacts"
                             android:textColor="@color/cardview_dark_background"
                             android:layout_marginStart="1dp"
                             android:textSize="18sp"
@@ -736,12 +736,12 @@
                 </LinearLayout></LinearLayout>
             <Button
                 android:id="@+id/submit"
-                android:layout_width="300dp"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dip"
                 android:background="@drawable/ripple_btn"
-                android:text="SAVE"
+                android:text="@string/save"
                 android:textColor="#ffffff"
                 android:textSize="20sp" />
 

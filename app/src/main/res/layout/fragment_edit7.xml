@@ -1,7 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:id="@+id/layout"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp">
@@ -9,100 +9,149 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scrollbars="vertical">
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/input_layout_quotation_template"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-                <EditText
-                    android:id="@+id/qtemplate"
-                    android:layout_width="match_parent"
-                    android:theme="@style/MyEditTextTheme"
+                <TextView
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:hint="Quotation Template" />
-            </android.support.design.widget.TextInputLayout>
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.3"
+                    android:text="Qtemplate"
+                    android:textSize="20sp" />
 
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/input_layout_qtemplate_duration"
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_quotation_template"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7">
+
+                    <EditText
+                        android:id="@+id/qtemplate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:theme="@style/MyEditTextTheme" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-                <EditText
-                    android:id="@+id/qduration"
-                    android:layout_width="match_parent"
-                    android:inputType="numberSigned"
-                    android:theme="@style/MyEditTextTheme"
+                <TextView
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:hint="Quotation template duration" />
-            </android.support.design.widget.TextInputLayout>
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.3"
+
+                    android:text="Duration"
+                    android:textSize="20sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_qtemplate_duration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7">
+
+                    <EditText
+                        android:id="@+id/qduration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:inputType="numberSigned"
+                        android:theme="@style/MyEditTextTheme" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
 
 
             <Button
                 android:id="@+id/add_products"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:textSize="20sp"
-                android:paddingTop="15dp"
-                android:background="@drawable/custom_edittext_bg"
-                android:text="Add Products"
-                android:textColor="#000" />
+                android:background="@drawable/btn_add"
+                android:padding="2dp"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
             <TableLayout
+                android:id="@+id/table_products"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="5dp"
                 android:divider="@color/bg_register"
-                android:id="@+id/table_products"
+                android:paddingTop="5dp"
                 android:stretchColumns="*">
+
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#fff"
-                    >
-                    <TextView
-                        android:text="Product"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="3dp"
-                        android:textColor="#000000"
-                        />
+                    android:background="#fff">
 
                     <TextView
-                        android:text="Quantity"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
                         android:padding="3dp"
-                        android:textColor="#000000"
+                        android:text="@string/product"
+                        android:textColor="#000000" />
 
-                        />
                     <TextView
-                        android:text="Unit Price"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
                         android:padding="3dp"
+                        android:text="@string/quantity"
                         android:textColor="#000000"
 
                         />
+
                     <TextView
-                        android:text="description"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
                         android:padding="3dp"
+                        android:text="@string/unit_price"
                         android:textColor="#000000"
 
                         />
+                    <!--   <TextView
+                           android:text="@string/description"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:padding="3dp"
+                           android:textColor="#000000"
+                           android:background="@drawable/cell_shape"
+
+                           />-->
                     <TextView
-                        android:text="Sub Total"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
                         android:padding="3dp"
+                        android:text="@string/sub_total"
+                        android:textColor="#000000"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:padding="3dp"
+                        android:text="Delete"
                         android:textColor="#000000"
 
                         />
@@ -118,11 +167,10 @@
                 <EditText
                     android:id="@+id/total"
                     android:layout_width="match_parent"
-                    android:theme="@style/MyEditTextTheme"
+                    android:layout_height="wrap_content"
                     android:editable="false"
 
-                    android:layout_height="wrap_content"
-                    android:hint="Total" />
+                    android:theme="@style/MyEditTextTheme" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -133,11 +181,10 @@
                 <EditText
                     android:id="@+id/tax"
                     android:layout_width="match_parent"
-                    android:theme="@style/MyEditTextTheme"
+                    android:layout_height="wrap_content"
                     android:editable="false"
 
-                    android:layout_height="wrap_content"
-                    android:hint="Tax Amount(10%)" />
+                    android:theme="@style/MyEditTextTheme" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -149,23 +196,20 @@
                 <EditText
                     android:id="@+id/gtotal"
                     android:layout_width="match_parent"
-                    android:theme="@style/MyEditTextTheme"
+                    android:layout_height="wrap_content"
                     android:editable="false"
 
-                    android:layout_height="wrap_content"
-                    android:hint="Grand total" />
+                    android:theme="@style/MyEditTextTheme" />
             </android.support.design.widget.TextInputLayout>
-
-
 
             <Button
                 android:id="@+id/submit"
-                android:layout_width="300dp"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dip"
                 android:background="@drawable/ripple_btn"
-                android:text="SUBMIT"
+                android:text="@string/save"
                 android:textColor="#ffffff"
                 android:textSize="20sp" />
         </LinearLayout>

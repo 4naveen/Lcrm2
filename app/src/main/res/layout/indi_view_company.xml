@@ -26,13 +26,14 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="3dp"
-                android:layout_weight="0.08" />
+                android:layout_weight="0.15" />
 
             <TextView
                 android:id="@+id/name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.4"
+                android:singleLine="true"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
@@ -41,17 +42,20 @@
             <TextView
                 android:id="@+id/customer"
                 android:layout_width="0dp"
+                android:singleLine="true"
+                android:paddingStart="5dp"
                 android:layout_gravity="center_vertical"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.3"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:paddingLeft="5dp" />
 
-         <!--   <TextView
-                android:id="@+id/phone"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.3"
-                android:textSize="20sp" />-->
+            <!--   <TextView
+                   android:id="@+id/phone"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="0.3"
+                   android:textSize="20sp" />-->
 
             <ImageView
                 android:id="@+id/options"

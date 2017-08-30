@@ -1,37 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/staff_coordinator"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:focusable="true"
-    android:id="@+id/staff_coordinator"
     android:focusableInTouchMode="true">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scrollbars="vertical">
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            >
+            android:paddingTop="5dp">
 
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/input_layout_firstName"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
+                android:layout_height="wrap_content">
 
                 <EditText
                     android:id="@+id/fname"
-                    android:inputType="textNoSuggestions"
-
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="FirstName"
+                    android:hint="@string/first_name"
+                    android:theme="@android:style/Theme.Holo.Light"
+
+                    android:inputType="textNoSuggestions"
                     android:singleLine="true" />
 
             </android.support.design.widget.TextInputLayout>
@@ -44,11 +45,12 @@
 
                 <EditText
                     android:id="@+id/lname"
-                    android:inputType="textNoSuggestions"
-
                     android:layout_width="match_parent"
+                    android:theme="@android:style/Theme.Holo.Light"
+
                     android:layout_height="wrap_content"
-                    android:hint="LastName"
+                    android:hint="@string/last_name"
+                    android:inputType="textNoSuggestions"
                     android:singleLine="true" />
             </android.support.design.widget.TextInputLayout>
 
@@ -60,282 +62,305 @@
                 <EditText
                     android:id="@+id/email"
                     android:layout_width="match_parent"
-                    android:inputType="textEmailAddress"
                     android:layout_height="wrap_content"
-                    android:hint="Email"
+                    android:hint="@string/email"
+                    android:theme="@android:style/Theme.Holo.Light"
+
+                    android:inputType="textEmailAddress"
                     android:singleLine="true" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/input_layout_password"
                 android:layout_width="match_parent"
-                app:passwordToggleEnabled="true"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true">
 
                 <EditText
                     android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Password"
+                    android:hint="@string/password"
+                    android:theme="@android:style/Theme.Holo.Light"
                     android:inputType="textPassword"
                     android:singleLine="true" />
             </android.support.design.widget.TextInputLayout>
+
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/input_layout_confirm_password"
                 android:layout_width="match_parent"
-                app:passwordToggleEnabled="true"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true">
 
                 <EditText
                     android:id="@+id/confirm_password"
                     android:layout_width="match_parent"
+                    android:theme="@android:style/Theme.Holo.Light"
                     android:layout_height="wrap_content"
-                    android:hint="Confirm Password"
+                    android:hint="@string/confirm_password"
                     android:inputType="textPassword"
                     android:singleLine="true" />
             </android.support.design.widget.TextInputLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Photo"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginStart="5dp"
-                    android:textSize="20sp"
                     android:paddingTop="15dp"
-                    android:layout_marginLeft="5dp" />
+                    android:text="@string/photo"
+                    android:textSize="20sp" />
+
                 <ImageView
+                    android:id="@+id/upload"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/upload"
-                    android:paddingTop="10dp"
-                    android:id="@+id/upload"
+                    android:layout_marginLeft="40dp"
                     android:layout_marginStart="40dp"
-                    android:layout_marginLeft="40dp" />
+                    android:paddingTop="10dp"
+                    android:src="@drawable/upload" />
             </LinearLayout>
 
             <TextView
+                android:id="@+id/permission"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Permissions"
-                android:id="@+id/permission"
+                android:layout_marginLeft="5dp"
                 android:layout_marginStart="5dp"
-                android:textSize="20sp"
                 android:paddingTop="5dp"
-                android:layout_marginLeft="5dp" />
+                android:text="@string/permission"
+                android:textSize="20sp" />
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:alpha=".5"
                 android:layout_above="@id/permission"
-                android:background="@android:color/black"/>
+                android:alpha=".5"
+                android:background="@android:color/black" />
+
             <LinearLayout
+                android:id="@+id/layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/layout"
                 android:baselineAligned="false"
                 android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="0.5"
                     android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Sales Teams"
+                            android:layout_marginLeft="1dp"
                             android:layout_marginStart="1dp"
-                            android:textSize="18sp"
+                            android:text="@string/sales_teams"
                             android:textColor="@color/cardview_dark_background"
+                            android:textSize="18sp" />
 
-                            android:layout_marginLeft="1dp" />
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
                             <android.support.v7.widget.AppCompatCheckBox
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
                                 android:id="@+id/salesteam_read"
-                                android:text="Read"
-                                android:textSize="15sp"
-                                />
-                            <android.support.v7.widget.AppCompatCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Write"
+
+                                android:text="@string/read"
+                                android:textSize="15sp" />
+
+                            <android.support.v7.widget.AppCompatCheckBox
                                 android:id="@+id/salesteam_write"
-                                android:textSize="15sp"
-                                />
-                            <android.support.v7.widget.AppCompatCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Delete"
-                                android:id="@+id/salesteam_delete"
-                                android:textSize="15sp"
-                                />
+                                android:text="@string/write"
+
+                                android:textSize="15sp" />
+
+
                         </LinearLayout>
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/salesteam_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delete"
+                            android:textSize="15sp" />
                     </LinearLayout>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="0.5"
                     android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Leads"
-                            android:textColor="@color/cardview_dark_background"
+                            android:layout_marginLeft="1dp"
                             android:layout_marginStart="1dp"
-                            android:textSize="18sp"
-                            android:layout_marginLeft="1dp" />
+                            android:text="@string/leads"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="18sp" />
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <android.support.v7.widget.AppCompatCheckBox
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Read"
                                 android:id="@+id/leads_read"
-                                android:textSize="15sp"
-                                />
-                            <android.support.v7.widget.AppCompatCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Write"
+                                android:text="@string/read"
+                                android:textSize="15sp" />
+
+                            <android.support.v7.widget.AppCompatCheckBox
                                 android:id="@+id/leads_write"
-
-                                android:textSize="15sp"
-                                />
-                            <android.support.v7.widget.AppCompatCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Delete"
-                                android:id="@+id/leads_delete"
+                                android:text="@string/write"
+                                android:textSize="15sp" />
 
-                                android:textSize="15sp"
-                                />
+
                         </LinearLayout>
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/leads_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delete"
+                            android:textSize="15sp" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:baselineAligned="false"
                 android:orientation="horizontal">
+
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="0.5"
                     android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Opportunity"
+                            android:layout_marginLeft="1dp"
                             android:layout_marginStart="1dp"
-                            android:textSize="18sp"
+                            android:text="@string/opportnity"
                             android:textColor="@color/cardview_dark_background"
-                            android:layout_marginLeft="1dp" />
+                            android:textSize="18sp" />
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <android.support.v7.widget.AppCompatCheckBox
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Read"
                                 android:id="@+id/opp_read"
-                                android:textSize="15sp"
-                                />
-                            <android.support.v7.widget.AppCompatCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Write"
+                                android:text="@string/read"
+                                android:textSize="15sp" />
+
+                            <android.support.v7.widget.AppCompatCheckBox
                                 android:id="@+id/opp_write"
-
-                                android:textSize="15sp"
-                                />
-                            <android.support.v7.widget.AppCompatCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Delete"
-                                android:id="@+id/opp_delete"
+                                android:text="@string/write"
 
-                                android:textSize="15sp"
-                                />
+                                android:textSize="15sp" />
+
+
                         </LinearLayout>
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/opp_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delete"
+                            android:textSize="15sp" />
                     </LinearLayout>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="0.5"
                     android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Logged Calls"
-                            android:textColor="@color/cardview_dark_background"
+                            android:layout_marginLeft="1dp"
                             android:layout_marginStart="1dp"
-                            android:textSize="18sp"
-                            android:layout_marginLeft="1dp" />
+                            android:text="@string/loggedCalls"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="18sp" />
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <android.support.v7.widget.AppCompatCheckBox
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Read"
                                 android:id="@+id/loggedCalls_read"
-
-                                android:textSize="15sp"
-                                />
-                            <android.support.v7.widget.AppCompatCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Write"
+                                android:text="@string/read"
+                                android:textSize="15sp" />
+
+                            <android.support.v7.widget.AppCompatCheckBox
                                 android:id="@+id/loggedCalls_write"
-
-                                android:textSize="15sp"
-                                />
-                            <android.support.v7.widget.AppCompatCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Delete"
-                                android:id="@+id/loggedCalls_delete"
+                                android:text="@string/write"
+                                android:textSize="15sp" />
 
-                                android:textSize="15sp"
-                                />
                         </LinearLayout>
+
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/loggedCalls_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delete"
+                            android:textSize="15sp" />
                     </LinearLayout>
-                </LinearLayout></LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -344,98 +369,107 @@
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="0.5"
                     android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Meetings"
+                            android:layout_marginLeft="1dp"
                             android:layout_marginStart="1dp"
-                            android:textSize="18sp"
+                            android:text="@string/meetings"
                             android:textColor="@color/cardview_dark_background"
-                            android:layout_marginLeft="1dp" />
+                            android:textSize="18sp" />
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <android.support.v7.widget.AppCompatCheckBox
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Read"
                                 android:id="@+id/meeting_read"
-                                android:textSize="15sp"
-                                />
-                            <android.support.v7.widget.AppCompatCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Write"
+                                android:text="@string/read"
+                                android:textSize="15sp" />
+
+                            <android.support.v7.widget.AppCompatCheckBox
                                 android:id="@+id/meeting_write"
-                                android:textSize="15sp"
-                                />
-                            <android.support.v7.widget.AppCompatCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Delete"
-                                android:id="@+id/meeting_delete"
-                                android:textSize="15sp"
-                                />
+                                android:text="@string/write"
+                                android:textSize="15sp" />
+
                         </LinearLayout>
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/meeting_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delete"
+                            android:textSize="15sp" />
                     </LinearLayout>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="0.5"
                     android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Products"
-                            android:textColor="@color/cardview_dark_background"
+                            android:layout_marginLeft="1dp"
                             android:layout_marginStart="1dp"
-                            android:textSize="18sp"
-                            android:layout_marginLeft="1dp" />
+                            android:text="@string/products"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="18sp" />
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <android.support.v7.widget.AppCompatCheckBox
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Read"
                                 android:id="@+id/products_read"
-                                android:textSize="15sp"
-                                />
-                            <android.support.v7.widget.AppCompatCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Write"
+                                android:text="@string/read"
+                                android:textSize="15sp" />
+
+                            <android.support.v7.widget.AppCompatCheckBox
                                 android:id="@+id/products_write"
-
-                                android:textSize="15sp"
-                                />
-                            <android.support.v7.widget.AppCompatCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Delete"
-                                android:id="@+id/products_delete"
+                                android:text="@string/write"
 
-                                android:textSize="15sp"
-                                />
+                                android:textSize="15sp" />
+
+
                         </LinearLayout>
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/products_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delete"
+
+                            android:textSize="15sp" />
                     </LinearLayout>
-                </LinearLayout></LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -444,99 +478,108 @@
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="0.5"
                     android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginStart="1dp"
                             android:text="Quotation"
-                            android:layout_marginStart="1dp"
-                            android:textSize="18sp"
                             android:textColor="@color/cardview_dark_background"
-                            android:layout_marginLeft="1dp" />
+                            android:textSize="18sp" />
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <android.support.v7.widget.AppCompatCheckBox
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Read"
                                 android:id="@+id/quotation_read"
-                                android:textSize="15sp"
-                                />
-                            <android.support.v7.widget.AppCompatCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Write"
+                                android:text="@string/read"
+                                android:textSize="15sp" />
+
+                            <android.support.v7.widget.AppCompatCheckBox
                                 android:id="@+id/quotation_write"
-                                android:textSize="15sp"
-                                />
-                            <android.support.v7.widget.AppCompatCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Delete"
-                                android:id="@+id/quotation_delete"
+                                android:text="@string/write"
+                                android:textSize="15sp" />
 
-                                android:textSize="15sp"
-                                />
+
                         </LinearLayout>
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/quotation_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delete"
+
+                            android:textSize="15sp" />
                     </LinearLayout>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="0.5"
                     android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="SalesOrder"
-                            android:textColor="@color/cardview_dark_background"
+                            android:layout_marginLeft="1dp"
                             android:layout_marginStart="1dp"
-                            android:textSize="18sp"
-                            android:layout_marginLeft="1dp" />
+                            android:text="@string/sales_orders"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="18sp" />
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <android.support.v7.widget.AppCompatCheckBox
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Read"
                                 android:id="@+id/salesorder_read"
-                                android:textSize="15sp"
-                                />
-                            <android.support.v7.widget.AppCompatCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Write"
+                                android:text="@string/read"
+                                android:textSize="15sp" />
+
+                            <android.support.v7.widget.AppCompatCheckBox
                                 android:id="@+id/salesorder_write"
-
-                                android:textSize="15sp"
-                                />
-                            <android.support.v7.widget.AppCompatCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Delete"
-                                android:id="@+id/salesorder_delete"
+                                android:text="@string/write"
 
-                                android:textSize="15sp"
-                                />
+                                android:textSize="15sp" />
+
                         </LinearLayout>
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/salesorder_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delete"
+
+                            android:textSize="15sp" />
                     </LinearLayout>
-                </LinearLayout></LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -545,100 +588,109 @@
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="0.5"
                     android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Invoices"
+                            android:layout_marginLeft="1dp"
                             android:layout_marginStart="1dp"
-                            android:textSize="18sp"
+                            android:text="@string/invoices"
                             android:textColor="@color/cardview_dark_background"
-                            android:layout_marginLeft="1dp" />
+                            android:textSize="18sp" />
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <android.support.v7.widget.AppCompatCheckBox
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Read"
                                 android:id="@+id/invoices_read"
-                                android:textSize="15sp"
-                                />
-                            <android.support.v7.widget.AppCompatCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Write"
+                                android:text="@string/read"
+                                android:textSize="15sp" />
+
+                            <android.support.v7.widget.AppCompatCheckBox
                                 android:id="@+id/invoices_write"
-
-                                android:textSize="15sp"
-                                />
-                            <android.support.v7.widget.AppCompatCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Delete"
-                                android:id="@+id/invoices_delete"
+                                android:text="@string/write"
 
-                                android:textSize="15sp"
-                                />
+                                android:textSize="15sp" />
+
+
                         </LinearLayout>
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/invoices_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delete"
+                            android:textSize="15sp" />
                     </LinearLayout>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="0.5"
                     android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Contracts"
-                            android:textColor="@color/cardview_dark_background"
+                            android:layout_marginLeft="1dp"
                             android:layout_marginStart="1dp"
-                            android:textSize="18sp"
-                            android:layout_marginLeft="1dp" />
+                            android:text="@string/contracts"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="18sp" />
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <android.support.v7.widget.AppCompatCheckBox
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Read"
                                 android:id="@+id/contracts_read"
-                                android:textSize="15sp"
-                                />
-                            <android.support.v7.widget.AppCompatCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Write"
+                                android:text="@string/read"
+                                android:textSize="15sp" />
+
+                            <android.support.v7.widget.AppCompatCheckBox
                                 android:id="@+id/contracts_write"
-
-                                android:textSize="15sp"
-                                />
-                            <android.support.v7.widget.AppCompatCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Delete"
-                                android:id="@+id/contracts_delete"
+                                android:text="@string/write"
 
-                                android:textSize="15sp"
-                                />
+                                android:textSize="15sp" />
+
+
                         </LinearLayout>
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/contracts_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delete"
+
+                            android:textSize="15sp" />
                     </LinearLayout>
-                </LinearLayout></LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -647,104 +699,115 @@
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="0.5"
                     android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Staffs"
+                            android:layout_marginLeft="1dp"
                             android:layout_marginStart="1dp"
-                            android:textSize="18sp"
+                            android:text="@string/staffs"
                             android:textColor="@color/cardview_dark_background"
-                            android:layout_marginLeft="1dp" />
+                            android:textSize="18sp" />
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <android.support.v7.widget.AppCompatCheckBox
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
                                 android:id="@+id/staff_read"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:text="Read"
-                                android:textSize="15sp"
-                                />
+                                android:textSize="15sp" />
+
                             <android.support.v7.widget.AppCompatCheckBox
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Write"
                                 android:id="@+id/staff_write"
-                                android:textSize="15sp"
-                                />
-                            <android.support.v7.widget.AppCompatCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Delete"
-                                android:id="@+id/staff_delete"
-                                android:textSize="15sp"
-                                />
+                                android:text="@string/write"
+                                android:textSize="15sp" />
+
+
                         </LinearLayout>
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/staff_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delete"
+                            android:textSize="15sp" />
                     </LinearLayout>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="0.5"
                     android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Contacts"
-                            android:textColor="@color/cardview_dark_background"
+                            android:layout_marginLeft="1dp"
                             android:layout_marginStart="1dp"
-                            android:textSize="18sp"
-                            android:layout_marginLeft="1dp" />
+                            android:text="@string/contacts"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="18sp" />
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <android.support.v7.widget.AppCompatCheckBox
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Read"
                                 android:id="@+id/contacts_read"
-                                android:textSize="15sp"
-                                />
-                            <android.support.v7.widget.AppCompatCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Write"
+                                android:text="@string/read"
+                                android:textSize="15sp" />
+
+                            <android.support.v7.widget.AppCompatCheckBox
                                 android:id="@+id/contacts_write"
-                                android:textSize="15sp"
-                                />
-                            <android.support.v7.widget.AppCompatCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Delete"
-                                android:id="@+id/contacts_delete"
-                                android:textSize="15sp"
-                                />
+                                android:text="@string/write"
+                                android:textSize="15sp" />
+
+
                         </LinearLayout>
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/contacts_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delete"
+                            android:textSize="15sp" />
                     </LinearLayout>
-                </LinearLayout></LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
             <Button
                 android:id="@+id/submit"
-                android:layout_width="300dp"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="20dip"
+                android:layout_marginTop="15dip"
                 android:background="@drawable/ripple_btn"
-                android:text="SUBMIT"
+                android:text="@string/submit"
+                android:layout_marginBottom="10dp"
                 android:textColor="#ffffff"
                 android:textSize="20sp" />
 

@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:layout_width="350dp"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="8dp"
     android:layout_marginBottom="23dp"
@@ -18,6 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:lines="2"
+            android:inputType="textNoSuggestions"
             android:theme="@style/MyEditTextTheme"
             android:hint="Task Description"
             android:singleLine="true" />
@@ -38,10 +39,8 @@
             android:hint="DeadLine"/>
 
     </android.support.design.widget.TextInputLayout>
-
-
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/input_layout_product_name"
+        android:id="@+id/input_layout_user"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -55,7 +54,7 @@
     </android.support.design.widget.TextInputLayout>
 
 
-    <LinearLayout
+   <!-- <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -79,6 +78,6 @@
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
             android:layout_marginLeft="25dp" />
-    </LinearLayout>
+    </LinearLayout>-->
 
 </LinearLayout>

@@ -35,54 +35,13 @@
 
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
-    <LinearLayout
-        android:id="@+id/bottom_wrapper"
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:background="#3F51B5"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:layout_height="35dp"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:textSize="22sp"
-            android:layout_marginStart="10dp"
-            android:textColor="#ffffff"
-            android:layout_marginLeft="10dp"
-            android:text="Contact"
-            />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:text="Responsible"
-            android:textColor="#ffffff"
-            android:textSize="22sp"
-            android:layout_marginStart="85dp"
-            android:layout_marginLeft="85dp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:text="Contract Duration"
-            android:textColor="#ffffff"
-            android:textSize="22sp"
-            android:layout_marginStart="100dp"
-            android:layout_marginLeft="100dp"
-
-            />
-
-    </LinearLayout>
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/rv"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="10dp"
         android:scrollbars="vertical"
         >
     </android.support.v7.widget.RecyclerView>

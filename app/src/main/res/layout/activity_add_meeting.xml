@@ -5,8 +5,17 @@
     android:orientation="vertical"
     android:id="@+id/layout"
     android:layout_height="match_parent"
-    tools:context=".addactivity.AddLeadActivity">
-
+    tools:context=".activities.add.AddLeadActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
         <android.support.design.widget.TextInputLayout
             android:id="@+id/input_layout_meeting_subject"
             android:layout_width="match_parent"
@@ -18,9 +27,10 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:hint="Meeting Subject"
+                android:hint="@string/meeting_dubject"
                 android:inputType="textEmailAddress"
                 android:padding="10dp"
+                android:theme="@android:style/Theme.Holo.Light"
                 android:singleLine="true"
                 android:textColor="@color/input_login"
                 android:textColorHint="@color/input_login_hint" />
@@ -39,30 +49,30 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/activity_vertical_margin"
-                    android:hint="Responsible" />
+                    android:hint="@string/responsible" />
             </android.support.design.widget.TextInputLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="5dp"
-                android:text="Attendees" />
+                android:text="@string/attendies" />
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/input_layout_attendies"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 >
-            <com.project.naveen.lcrm.ContactsCompletionView
+            <com.project.lorvent.lcrm.utils.ContactsCompletionView
                 android:id="@+id/searchView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:focusableInTouchMode="true"
                 android:hint="@string/name_prompt"
                 android:imeOptions="actionDone"
                 android:inputType="text|textNoSuggestions|textMultiLine"
-
                 android:nextFocusDown="@+id/editText"
                 android:textColor="#000"
+                android:completionThreshold="1"
+
                 android:textSize="19sp" />
             </android.support.design.widget.TextInputLayout>
 
@@ -80,7 +90,7 @@
                         android:id="@+id/start_date"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Starting Date"
+                        android:hint="@string/starting_date"
                         android:singleLine="true" />
                 </android.support.design.widget.TextInputLayout>
                 <android.support.design.widget.TextInputLayout
@@ -111,7 +121,7 @@
                        android:id="@+id/end_date"
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content"
-                       android:hint="Ending Date"
+                       android:hint="@string/ending_date"
                        android:singleLine="true" />
                </android.support.design.widget.TextInputLayout>
                <android.support.design.widget.TextInputLayout
@@ -132,12 +142,14 @@
 
         <Button
             android:id="@+id/submit"
-            android:layout_width="300dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dip"
             android:background="@drawable/ripple_btn"
-            android:text="SUBMIT"
+            android:text="@string/submit"
             android:textColor="#ffffff"
             android:textSize="20sp" />
+            </LinearLayout>
+    </ScrollView>
     </LinearLayout>

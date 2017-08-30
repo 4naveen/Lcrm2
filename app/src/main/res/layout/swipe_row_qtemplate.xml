@@ -23,7 +23,6 @@
             android:layout_marginStart="15dp"
             android:layout_weight="0.5"
             android:text="hgfdhdsdfdsff"
-            android:textColor="#263238"
             android:textSize="20sp" />
 
         <TextView
@@ -34,7 +33,6 @@
             android:text="hjgvdshvd"
             android:layout_marginLeft="15dp"
             android:layout_marginStart="15dp"
-            android:textColor="#263238"
             android:textSize="20sp" />
 
 

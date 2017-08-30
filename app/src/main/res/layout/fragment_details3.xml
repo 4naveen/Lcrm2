@@ -5,17 +5,33 @@
     android:layout_width="match_parent"
     xmlns:fab="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent">
-
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardCornerRadius="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"
+        card_view:cardUseCompatPadding="true"
+        android:layout_marginLeft="10dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:layout_marginBottom="5dp"
         android:layout_marginTop="20dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp"
+            android:padding="7dp"
             >
             <TextView
                 android:layout_width="0dp"
@@ -23,9 +39,17 @@
                 android:layout_weight="0.5"
                 android:text="Invoice Number"
 
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#263238"
                 />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text=":"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="0.5"
@@ -33,7 +57,7 @@
                 android:padding="2dp"
                 android:id="@+id/invoice_number"
 
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#000000"
                 />
 
@@ -43,7 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp"
+            android:padding="7dp"
             >
             <TextView
                 android:layout_width="0dp"
@@ -51,9 +75,17 @@
                 android:layout_weight="0.5"
                 android:text="Customer"
 
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#263238"
                 />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text=":"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="0.5"
@@ -61,7 +93,7 @@
                 android:padding="2dp"
 
                 android:id="@+id/customer"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#000000"
                 />
 
@@ -71,7 +103,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp"
+            android:padding="7dp"
             >
             <TextView
                 android:layout_width="0dp"
@@ -79,16 +111,24 @@
                 android:layout_weight="0.5"
                 android:text="Invoice Date"
 
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#263238"
                 />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text=":"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="0.5"
                 android:layout_height="wrap_content"
                 android:padding="2dp"
                 android:id="@+id/invoice_date"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#000000"
                 />
 
@@ -98,7 +138,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp"
+            android:padding="7dp"
             >
             <TextView
                 android:layout_width="0dp"
@@ -106,16 +146,24 @@
                 android:layout_weight="0.5"
                 android:text="Due date"
 
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#263238"
                 />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text=":"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="0.5"
                 android:layout_height="wrap_content"
                 android:padding="2dp"
 
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:id="@+id/due_date"
                 android:textColor="#000000"
                 />
@@ -126,7 +174,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp"
+            android:padding="7dp"
             >
             <TextView
                 android:layout_width="0dp"
@@ -134,16 +182,24 @@
                 android:layout_weight="0.5"
                 android:text="Payment_term"
 
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#263238"
                 />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text=":"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="0.5"
                 android:layout_height="wrap_content"
                 android:padding="2dp"
                 android:id="@+id/pay_term"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#000000"
                 />
 
@@ -153,7 +209,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp"
+            android:padding="7dp"
             >
             <TextView
                 android:layout_width="0dp"
@@ -161,16 +217,24 @@
                 android:layout_weight="0.5"
                 android:text="SalesTeam"
 
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#263238"
                 />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text=":"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="0.5"
                 android:layout_height="wrap_content"
                 android:padding="2dp"
                 android:id="@+id/salesteam"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#000000"
                 />
         </LinearLayout>
@@ -178,7 +242,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp"
+            android:padding="7dp"
             >
             <TextView
                 android:layout_width="0dp"
@@ -186,16 +250,24 @@
                 android:layout_weight="0.5"
                 android:text="Sales Person"
 
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#263238"
                 />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text=":"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="0.5"
                 android:layout_height="wrap_content"
                 android:padding="2dp"
                 android:id="@+id/salesperson"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#000000"
                 />
 
@@ -205,14 +277,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp"
+            android:padding="7dp"
             >
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:text="Products"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#263238"
                 />
 
@@ -231,41 +303,46 @@
                         android:text="Product"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="3dp"
+                        android:padding="4dp"
                         android:textColor="#000000"
+                        android:background="@drawable/cell_shape"
+
                         />
 
                     <TextView
                         android:text="Quantity"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="3dp"
+                        android:padding="4dp"
                         android:textColor="#000000"
+                        android:background="@drawable/cell_shape"
 
                         />
                     <TextView
                         android:text="Unit Price"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="3dp"
+                        android:padding="4dp"
                         android:textColor="#000000"
+                        android:background="@drawable/cell_shape"
 
                         />
                     <TextView
                         android:text="Taxes"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="3dp"
+                        android:padding="4dp"
                         android:textColor="#000000"
+                        android:background="@drawable/cell_shape"
 
                         />
                     <TextView
                         android:text="Sub Total"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="3dp"
+                        android:padding="4dp"
                         android:textColor="#000000"
-
+                        android:background="@drawable/cell_shape"
                         />
                 </TableRow>
 
@@ -279,7 +356,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp"
+            android:padding="7dp"
             >
             <TextView
                 android:layout_width="0dp"
@@ -287,16 +364,24 @@
                 android:layout_weight="0.5"
                 android:text="Untaxed Amount"
 
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#263238"
                 />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text=":"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="0.5"
                 android:layout_height="wrap_content"
                 android:padding="2dp"
                 android:id="@+id/un_amount"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#000000"
                 />
         </LinearLayout>
@@ -306,7 +391,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp"
+            android:padding="7dp"
             >
             <TextView
                 android:layout_width="0dp"
@@ -314,16 +399,24 @@
                 android:layout_weight="0.5"
                 android:text="Taxes"
 
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#263238"
                 />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text=":"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="0.5"
                 android:layout_height="wrap_content"
                 android:padding="2dp"
                 android:id="@+id/taxes"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#000000"
                 />
         </LinearLayout>
@@ -331,7 +424,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp"
+            android:padding="7dp"
             >
             <TextView
                 android:layout_width="0dp"
@@ -339,16 +432,24 @@
                 android:layout_weight="0.5"
                 android:text="Total"
 
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#263238"
                 />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text=":"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="0.5"
                 android:layout_height="wrap_content"
                 android:padding="2dp"
                 android:id="@+id/total"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#000000"
                 />
         </LinearLayout>
@@ -356,7 +457,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp"
+            android:padding="7dp"
             >
             <TextView
                 android:layout_width="0dp"
@@ -364,16 +465,24 @@
                 android:layout_weight="0.5"
                 android:text="Discount"
 
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#263238"
                 />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text=":"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="0.5"
                 android:layout_height="wrap_content"
                 android:padding="2dp"
                 android:id="@+id/discount"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#000000"
                 />
         </LinearLayout>
@@ -381,7 +490,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp"
+            android:padding="7dp"
             >
             <TextView
                 android:layout_width="0dp"
@@ -389,16 +498,24 @@
                 android:layout_weight="0.5"
                 android:text="Final Price"
 
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#263238"
                 />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text=":"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="0.5"
                 android:layout_height="wrap_content"
                 android:padding="2dp"
                 android:id="@+id/final_price"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#000000"
                 />
         </LinearLayout>
@@ -406,7 +523,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp"
+            android:padding="7dp"
             >
             <TextView
                 android:layout_width="0dp"
@@ -414,15 +531,23 @@
                 android:layout_weight="0.5"
                 android:text="Status"
 
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#263238"
                 />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text=":"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="0.5"
                 android:layout_height="wrap_content"
                 android:id="@+id/status"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#000000"
                 />
         </LinearLayout>
@@ -431,29 +556,38 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="7dp"
             >
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:text="Unpaid Amount"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#263238"
                 />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text=":"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="0.5"
                 android:layout_height="wrap_content"
                 android:id="@+id/unpaid_amount"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#000000"
                 />
         </LinearLayout>
 
 
     </LinearLayout>
-
+</ScrollView>
     <com.getbase.floatingactionbutton.FloatingActionsMenu
         android:id="@+id/multiple_actions"
         android:layout_width="wrap_content"
@@ -485,5 +619,5 @@
             fab:fab_colorPressed="@color/white_pressed"/>
 
     </com.getbase.floatingactionbutton.FloatingActionsMenu>
-
+</android.support.v7.widget.CardView>
 </FrameLayout>

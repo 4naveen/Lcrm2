@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.project.naveen.lcrm">
+    package="com.project.lorvent.lcrm">
 
     <uses-sdk tools:overrideLibrary="com.joaquimley.faboptions" />
+    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE"/> -->
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="false"
+        android:xlargeScreens="true" />
 
     <application
         android:allowBackup="true"
@@ -16,7 +23,7 @@
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
         <activity
-            android:name=".WelcomeActivity"
+            android:name=".activities.WelcomeActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
@@ -25,111 +32,115 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="54.lcrm.in"
+                    android:pathPrefix="/"
+                    android:scheme="http" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.LoginActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".activities.home.HomeActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".addactivity.AddLeadActivity"
+            android:name=".activities.add.AddLeadActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".addactivity.AddStaffActivity"
+            android:name=".activities.add.AddStaffActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".addactivity.AddMeetingActivity"
+            android:name=".activities.add.AddMeetingActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".addactivity.AddOppActivity"
+            android:name=".activities.add.AddOppActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.details.admin.DetailSalesTeamActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.add.AddSalesTeamActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.add.AddProductsActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.add.AddQuotationActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.details.admin.QuotationDetailsActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.add.AddQtemplateActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.details.admin.QtemplateDetailsActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.details.admin.InvoicesDetailsActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.user_profile.UserProfileActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.add.AddLoggedCallActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.add.AddSalesOrderActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.details.admin.SalesOrderDetailsActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.add.AddContractActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <!--
-            <activity
-            android:name=".menu.fragment.leads.LeadCallActivity"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        -->
-        <activity
-            android:name=".detailsactivity.DetailSalesTeamActivity"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".addactivity.AddSalesTeamActivity"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".addactivity.AddProductsActivity"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".addactivity.AddQuotationActivity"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".detailsactivity.QuotationDetailsActivity"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".addactivity.AddQtemplateActivity"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".detailsactivity.QtemplateDetailsActivity"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".detailsactivity.InvoicesDetailsActivity"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".UserProfileActivity"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".addactivity.AddLoggedCallActivity"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".addactivity.AddSalesOrderActivity"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".detailsactivity.SalesOrderDetailsActivity"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".addactivity.AddContractActivity"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".menu.fragment.opportunity.CallActivity"
             android:configChanges="orientation"
@@ -140,50 +151,81 @@
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
+        -->
         <activity
-            android:name=".addactivity.AddInvoicesActivity"
+            android:name=".activities.add.AddInvoicesActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".Home1Activity"
+            android:name=".activities.home.Home1Activity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".UserProfile1Activity"
+            android:name=".activities.user_profile.UserProfile1Activity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".addactivity.AddCompanyActivity"
+            android:name=".activities.add.AddCompanyActivity"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".addactivity.AddContactsActivity"
+            android:name=".activities.add.AddContactsActivity"
             android:windowSoftInputMode="adjustPan" />
-        <activity android:name=".detailsactivity.DetailOpportunityActivity" />
-        <activity android:name=".detailsactivity.DetailsLeadActivity" />
-        <activity android:name=".addactivity.AddPaymentActivity" />
-        <activity android:name=".detailsactivity.DetailPaymentActivity" />
-        <activity android:name=".detailsactivity.DetailsLoggedCallActivity" />
-        <activity android:name=".detailsactivity.DetailProductActivity" />
-        <activity android:name=".detailsactivity.DetailCompanyActivity" />
-        <activity android:name=".detailsactivity.ContractDetailActivity" />
-        <activity android:name=".detailsactivity.StaffDetailActivity" />
-        <activity android:name=".detailsactivity.DetailCustomerActivity" />
-        <activity android:name=".detailsactivity.DetailMeetingActivity" />
+        <activity android:name=".activities.details.admin.DetailOpportunityActivity" />
+        <activity android:name=".activities.details.admin.DetailsLeadActivity" />
+        <activity android:name=".activities.add.AddPaymentActivity" />
+        <activity android:name=".activities.details.admin.DetailPaymentActivity" />
+        <activity android:name=".activities.details.admin.DetailsLoggedCallActivity" />
+        <activity android:name=".activities.details.admin.DetailProductActivity" />
+        <activity android:name=".activities.details.admin.DetailCompanyActivity" />
+        <activity android:name=".activities.details.admin.ContractDetailActivity" />
+        <activity android:name=".activities.details.admin.StaffDetailActivity" />
+        <activity android:name=".activities.details.admin.DetailCustomerActivity" />
+        <activity android:name=".activities.details.admin.DetailMeetingActivity" />
+        <activity
+            android:name=".activities.home.Home2Activity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activities.user_profile.UserProfile2Activity" />
+        <activity android:name=".activities.details.customers.QuotationDetailActivity" />
+        <activity android:name=".activities.details.customers.SalesOrederDetailActivity" />
+        <activity android:name=".activities.details.customers.InvoiceDetailActivity" />
+
+        <service
+            android:name=".utils.LogoutService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".activities.NetworkErrorActivity" />
+        <activity android:name=".activities.HelpActivity" />
+        <activity android:name=".activities.AboutUsActivity" />
+        <activity
+            android:name=".activities.MailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.ComposeMailActivity" />
+        <activity android:name=".activities.ComposeMailCustomerActivity" />
+        <activity android:name=".activities.InboxDetailActivity" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="15be6f0ea1f37eeb5dd0fb9c6031d9d8799fe56c" />
 
         <activity
-            android:name=".Home2Activity"
+            android:name=".activities.SendByMailActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".activities.VerifyUrlActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="adjustPan" />
-        <activity android:name=".UserProfile2Activity" />
-        <activity android:name=".customer.detailactivity.QuotationDetailActivity" />
-        <activity android:name=".customer.detailactivity.SalesOrederDetailActivity" />
-        <activity android:name=".customer.detailactivity.InvoiceDetailActivity"></activity>
+            android:windowSoftInputMode="adjustPan" >
+
+        </activity>
     </application>
 
 </manifest>

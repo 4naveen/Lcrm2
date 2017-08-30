@@ -5,7 +5,16 @@
     android:orientation="vertical"
     android:id="@+id/layout"
     android:padding="8dp">
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:id="@+id/input_layout_product_name"
@@ -15,7 +24,9 @@
             android:id="@+id/products_name"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:hint="Product Name"
+            android:hint="@string/product_name"
+            android:theme="@android:style/Theme.Holo.Light"
+
             android:inputType="textNoSuggestions" />
     </android.support.design.widget.TextInputLayout>
 
@@ -30,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
 
-            android:hint="Category " />
+            android:hint="@string/category" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -44,7 +55,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
 
-            android:hint="Status " />
+            android:hint="@string/status" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -58,7 +69,9 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:ems="10"
-            android:hint="Quantity In Hand"
+            android:theme="@android:style/Theme.Holo.Light"
+
+            android:hint="@string/quantity_hand"
             android:inputType="numberSigned" />
     </android.support.design.widget.TextInputLayout>
 
@@ -73,7 +86,9 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:ems="10"
-            android:hint="Quantity Available"
+            android:theme="@android:style/Theme.Holo.Light"
+
+            android:hint="@string/quantity_available"
             android:inputType="numberSigned" />
     </android.support.design.widget.TextInputLayout>
 
@@ -87,7 +102,7 @@
             android:id="@+id/product_type"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:hint="Product Type " />
+            android:hint="@string/product_type" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -100,7 +115,9 @@
             android:id="@+id/sales_price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Sales Price"
+            android:hint="@string/sales_price"
+            android:theme="@android:style/Theme.Holo.Light"
+
             android:inputType="numberSigned" />
     </android.support.design.widget.TextInputLayout>
 
@@ -115,7 +132,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="top|left"
-            android:hint="Description"
+            android:hint="@string/description"
+            android:theme="@android:style/Theme.Holo.Light"
             android:inputType="textNoSuggestions"
             android:lines="5"
             android:scrollHorizontally="false" />
@@ -123,12 +141,14 @@
 
     <Button
         android:id="@+id/submit"
-        android:layout_width="300dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dip"
         android:background="@drawable/ripple_btn"
-        android:text="SUBMIT"
+        android:text="@string/submit"
         android:textColor="#ffffff"
         android:textSize="20sp" />
+            </LinearLayout>
+    </ScrollView>
 </LinearLayout>

@@ -8,14 +8,6 @@
     android:layout_marginTop="8dp"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="New Opportunity Meeting"
-        android:textColor="#212121"
-        android:textSize="25sp" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,6 +24,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Start Date"
+                android:windowSoftInputMode="stateAlwaysHidden"
+                android:inputType="none"
                 android:singleLine="true" />
         </android.support.design.widget.TextInputLayout>
 
@@ -46,6 +40,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="StartTime"
+                android:windowSoftInputMode="stateAlwaysHidden"
+                android:inputType="none"
                 android:singleLine="true" />
         </android.support.design.widget.TextInputLayout>
     </LinearLayout>
@@ -65,6 +61,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="End Date"
+                android:inputType="none"
+                android:windowSoftInputMode="stateAlwaysHidden"
                 android:singleLine="true" />
         </android.support.design.widget.TextInputLayout>
 
@@ -79,10 +77,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="EndTime"
+                android:windowSoftInputMode="stateAlwaysHidden"
+                android:inputType="none"
                 android:singleLine="true" />
         </android.support.design.widget.TextInputLayout>
     </LinearLayout>
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_responsible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <com.weiwangcn.betterspinner.library.BetterSpinner
+                android:id="@+id/responsible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:hint="" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
     <android.support.design.widget.TextInputLayout
         android:id="@+id/input_layout_meeting_subject"
         android:layout_width="match_parent"
@@ -96,30 +112,4 @@
             android:hint="Meeting Subject"
             android:inputType="textEmailAddress" />
     </android.support.design.widget.TextInputLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="30dp">
-
-        <Button
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/cancel"
-            android:text="Cancel"
-            android:textColor="#FF6E40"
-            android:layout_marginStart="45dp"
-            android:layout_marginLeft="45dp"
-            android:textSize="18sp" />
-
-        <Button
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/submit"
-            android:text="Save"
-            android:textColor="@color/colorPrimary"
-            android:layout_marginStart="30dp"
-            android:layout_marginLeft="30dp"
-            android:textSize="18sp" />
-    </LinearLayout>
 </LinearLayout>

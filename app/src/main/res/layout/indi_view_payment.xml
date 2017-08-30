@@ -22,7 +22,7 @@
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="0.1"
+                android:layout_weight="0.2"
                 android:layout_height="wrap_content"
                 android:id="@+id/pay_number"
                 android:layout_marginStart="2dp"
@@ -30,21 +30,23 @@
                 android:layout_marginLeft="2dp" />
                   <TextView
                     android:layout_width="0dp"
-                    android:layout_weight="0.3"
+                    android:layout_weight="0.5"
+                      android:singleLine="true"
                     android:layout_height="wrap_content"
                      android:id="@+id/customer"
                      android:textSize="20sp"
                     />
-               <TextView
+              <!-- <TextView
                 android:layout_width="0dp"
                 android:layout_weight="0.4"
                 android:layout_height="wrap_content"
                 android:id="@+id/pay_date"
                 android:textSize="20sp"/>
-
+-->
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="0.1"
+                android:layout_weight="0.2"
+                android:singleLine="true"
                 android:layout_height="wrap_content"
                 android:id="@+id/pay_received"
                 android:textSize="20sp"/>

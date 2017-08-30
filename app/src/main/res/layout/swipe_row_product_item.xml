@@ -22,19 +22,18 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.4"
                 android:textSize="20sp"
+                android:singleLine="true"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="20dp"
-                android:textColor="#263238"
+                android:layout_marginLeft="5dp"
                 android:id="@+id/products_name"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="0.35"
                 android:layout_height="wrap_content"
                 android:padding="2dp"
+                android:singleLine="true"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="60dp"
                 android:textSize="20sp"
-                android:textColor="#2f2f2f"
                 android:id="@+id/category"/>
             <ImageView
                 android:layout_width="0dp"
@@ -42,7 +41,7 @@
                 android:id="@+id/arrow"
                 android:src="@drawable/ic_action_navigation_chevron_right"
                 android:layout_marginLeft="3dp"
-                android:layout_weight="0.05"
+                android:layout_weight="0.1"
                 android:layout_gravity="center" />
         </LinearLayout>
 

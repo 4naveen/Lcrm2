@@ -29,7 +29,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/activity_vertical_margin"
-                    android:hint="Invoice Number" /></android.support.design.widget.TextInputLayout>
+                    android:hint="@string/invoice_number" />
+            </android.support.design.widget.TextInputLayout>
         </LinearLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -41,7 +42,7 @@
                 android:id="@+id/pay_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Payment Date"
+                android:hint="@string/payment_date"
                 android:singleLine="true" />
         </android.support.design.widget.TextInputLayout>
 
@@ -60,7 +61,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/activity_vertical_margin"
-                    android:hint="Payment Method" />
+                    android:hint="@string/payment_method" />
             </android.support.design.widget.TextInputLayout>
         </LinearLayout>
 
@@ -74,18 +75,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:hint="Amount Received"
+                android:hint="@string/amount_received"
                 android:singleLine="true" />
         </android.support.design.widget.TextInputLayout>
 
         <Button
             android:id="@+id/submit"
-            android:layout_width="300dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dip"
             android:background="@drawable/ripple_btn"
-            android:text="SUBMIT"
+            android:text="@string/submit"
             android:textColor="#ffffff"
             android:textSize="20sp" />
 

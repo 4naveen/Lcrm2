@@ -9,7 +9,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scrollbars="vertical">
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,13 +20,12 @@
                 android:id="@+id/input_layout_quotation_template"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
                 <EditText
                     android:id="@+id/qtemplate"
                     android:layout_width="match_parent"
-                    android:theme="@style/MyEditTextTheme"
+                    android:theme="@android:style/Theme.Holo.Light"
                     android:layout_height="wrap_content"
-                    android:hint="Quotation Template" />
+                    android:hint="@string/quotation_template" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -37,23 +36,21 @@
                 <EditText
                     android:id="@+id/qduration"
                     android:layout_width="match_parent"
-                    android:theme="@style/MyEditTextTheme"
+                    android:theme="@android:style/Theme.Holo.Light"
                     android:layout_height="wrap_content"
                     android:inputType="numberSigned"
-                    android:hint="Quotation template duration" />
+                    android:hint="@string/quotation_template_durtion" />
             </android.support.design.widget.TextInputLayout>
-
 
             <Button
                 android:id="@+id/add_products"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:textSize="20sp"
-                android:paddingTop="15dp"
-                android:background="@drawable/custom_edittext_bg"
-                android:text="Add Products"
-                android:textColor="#000" />
+                android:padding="2dp"
+                android:background="@drawable/btn_add"
+                android:textColor="#fff"
+                android:textSize="20sp" />
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -67,45 +64,51 @@
                     android:background="#fff"
                     >
                     <TextView
-                        android:text="Product"
+                        android:text="@string/product"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="3dp"
+                        android:padding="4dp"
                         android:textColor="#000000"
+                        android:background="@drawable/cell_shape"
+
                         />
 
                     <TextView
-                        android:text="Quantity"
+                        android:text="@string/quantity"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="3dp"
+                        android:padding="4dp"
                         android:textColor="#000000"
+                        android:background="@drawable/cell_shape"
 
                         />
                     <TextView
-                        android:text="Unit Price"
+                        android:text="@string/unit_price"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="3dp"
+                        android:padding="4dp"
                         android:textColor="#000000"
+                        android:background="@drawable/cell_shape"
 
                         />
+
                     <TextView
-                        android:text="description"
+                        android:text="@string/sub_total"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="3dp"
+                        android:padding="4dp"
                         android:textColor="#000000"
 
+                        android:background="@drawable/cell_shape"
                         />
-                    <TextView
-                        android:text="Sub Total"
+                    <!--<TextView
+                        android:text="@string/description"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="3dp"
+                        android:padding="4dp"
                         android:textColor="#000000"
-
-                        />
+                        android:background="@drawable/cell_shape"
+                        />-->
                 </TableRow>
 
             </TableLayout>
@@ -122,7 +125,7 @@
                     android:editable="false"
 
                     android:layout_height="wrap_content"
-                    android:hint="Total" />
+                    android:hint="@string/total" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -137,7 +140,7 @@
                     android:editable="false"
 
                     android:layout_height="wrap_content"
-                    android:hint="Tax Amount(10%)" />
+                    android:hint="@string/tax_amount" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -153,19 +156,19 @@
                     android:editable="false"
 
                     android:layout_height="wrap_content"
-                    android:hint="Grand total" />
+                    android:hint="@string/grand_total" />
             </android.support.design.widget.TextInputLayout>
 
 
 
             <Button
                 android:id="@+id/submit"
-                android:layout_width="300dp"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dip"
                 android:background="@drawable/ripple_btn"
-                android:text="SUBMIT"
+                android:text="@string/submit"
                 android:textColor="#ffffff"
                 android:textSize="20sp" />
         </LinearLayout>

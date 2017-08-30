@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv"
+    card_view:cardBackgroundColor="#ffffff"
+    card_view:cardElevation="1dp"
+    card_view:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.9"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textSize="20sp"
+                    android:text="I002"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#263238"
+                    android:id="@+id/iNumber"
+                    android:layout_marginLeft="10dp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textSize="20sp"
+                    android:text="21.04.2016."
+                    android:textColor="#263238"
+                    android:id="@+id/dueDate"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:text="0$"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginStart="90dp"
+                    android:textColor="#2f2f2f"
+                    android:id="@+id/unpaid_amount"
+                    android:layout_marginLeft="90dp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Invoice has been expired"
+                android:layout_marginStart="10dp"
+                android:textColor="#2f2f2f"
+                android:id="@+id/status"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_action_navigation_chevron_right" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

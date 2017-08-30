@@ -7,14 +7,7 @@
     android:layout_marginTop="8dp"
     android:layout_marginBottom="23dp"
     android:layout_gravity="center">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="New Opportunity Call"
-        android:textSize="25sp"
-        android:textColor="#212121"
-        android:gravity="center"
-         />
+
     <android.support.design.widget.TextInputLayout
         android:id="@+id/input_layout_date"
         android:layout_marginTop="20dp"
@@ -66,35 +59,8 @@
         android:id="@+id/responsible"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-
         android:hint="Responsible" />
     </android.support.design.widget.TextInputLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="30dp">
 
-        <Button
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/cancel"
-            android:text="Cancel"
-            android:textColor="#FF6E40"
-            android:layout_marginStart="45dp"
-            android:layout_marginLeft="45dp"
-            android:textSize="18sp"
-            />
-        <Button
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/submit"
-            android:text="Submit"
-            android:textColor="@color/colorPrimary"
-            android:layout_marginStart="30dp"
-            android:layout_marginLeft="30dp"
-            android:textSize="18sp"
-            />
-    </LinearLayout>
 
 </LinearLayout>

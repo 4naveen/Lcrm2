@@ -1,0 +1,69 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.93"
+            android:id="@+id/frame"/>
+
+
+        <com.ss.bottomnavigation.BottomNavigation
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.07"
+            android:background="@color/colorPrimary">
+            <com.ss.bottomnavigation.TabItem
+                android:id="@+id/general"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tab_text="General"
+                app:tab_icon="@mipmap/ic_build_white_18dp"
+                />
+
+            <com.ss.bottomnavigation.TabItem
+                android:id="@+id/payment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tab_text="Payment"
+                app:tab_icon="@mipmap/ic_monetization_on_white_18dp"
+                />
+            <com.ss.bottomnavigation.TabItem
+                android:id="@+id/start_number"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tab_text="Start number"
+                app:tab_icon="@mipmap/ic_settings_applications_white_18dp"
+                />
+
+            <com.ss.bottomnavigation.TabItem
+                android:id="@+id/pusher_Config"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tab_text="Key Config."
+                app:tab_icon="@mipmap/ic_receipt_white_24dp"
+                />
+
+            <com.ss.bottomnavigation.TabItem
+                android:id="@+id/backup"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tab_text="Back up"
+                app:tab_icon="@mipmap/ic_cloud_upload_white_18dp"
+                />
+        </com.ss.bottomnavigation.BottomNavigation>
+    </LinearLayout>
+</FrameLayout>

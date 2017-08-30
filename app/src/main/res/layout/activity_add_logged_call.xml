@@ -16,7 +16,7 @@
             android:id="@+id/date"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:hint="Date"
+            android:hint="@string/date"
             android:inputType="date" />
     </android.support.design.widget.TextInputLayout>
 
@@ -31,7 +31,8 @@
             android:id="@+id/call_sumaary"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:hint="Call Summary"
+            android:hint="@string/call_summary"
+            android:theme="@android:style/Theme.Holo.Light"
             android:inputType="textNoSuggestions"
             android:lines="3" />
     </android.support.design.widget.TextInputLayout>
@@ -45,45 +46,44 @@
             android:id="@+id/contacts"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:hint="Contacts " />
+            android:hint="@string/contacts" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:id="@+id/input_layout_responsible"
-
         android:layout_height="wrap_content">
 
         <com.weiwangcn.betterspinner.library.BetterSpinner
             android:id="@+id/responsible"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:hint="Responsible " />
+            android:hint="@string/responsible" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:id="@+id/input_layout_duration"
-
         android:layout_height="wrap_content">
 
         <EditText
             android:id="@+id/duration"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:hint="Duration"
+            android:hint="@string/duration"
+            android:theme="@android:style/Theme.Holo.Light"
             android:inputType="numberSigned"
             android:lines="3" />
     </android.support.design.widget.TextInputLayout>
 
     <Button
         android:id="@+id/submit"
-        android:layout_width="300dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dip"
         android:background="@drawable/ripple_btn"
-        android:text="SUBMIT"
+        android:text="@string/submit"
         android:textColor="#ffffff"
         android:textSize="20sp" />
 </LinearLayout>

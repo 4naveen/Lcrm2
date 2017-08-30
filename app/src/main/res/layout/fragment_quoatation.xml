@@ -15,7 +15,7 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
+        android:layout_height="160dp"
         android:fitsSystemWindows="true">
 
         <android.support.design.widget.CollapsingToolbarLayout
@@ -39,19 +39,21 @@
         android:id="@+id/bottom_wrapper"
         android:layout_width="match_parent"
         android:orientation="horizontal"
-        android:background="#3F51B5"
+        android:background="@color/colorPrimary"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:layout_height="35dp"
+        android:layout_height="wrap_content"
         >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:textSize="22sp"
-            android:layout_marginStart="10dp"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="5dp"
             android:textColor="#ffffff"
-            android:layout_marginLeft="7dp"
-            android:text="Quotation No.."
+            android:layout_marginLeft="5dp"
+            android:text="Q No.."
             />
 
         <TextView
@@ -60,9 +62,11 @@
             android:gravity="center_vertical"
             android:text="Sales Person"
             android:textColor="#ffffff"
-            android:textSize="22sp"
-            android:layout_marginStart="50dp"
-            android:layout_marginLeft="50dp"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -70,9 +74,11 @@
             android:gravity="center_vertical"
             android:text="Amount"
             android:textColor="#ffffff"
-            android:textSize="22sp"
-            android:layout_marginStart="115dp"
-            android:layout_marginLeft="115dp"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
 
             />
 
@@ -82,7 +88,7 @@
         android:layout_height="match_parent"
         android:id="@+id/rv"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:scrollbars="vertical"
         >
     </android.support.v7.widget.RecyclerView>

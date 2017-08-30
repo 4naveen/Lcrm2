@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-  <!--  <item
-        android:id="@+id/share"
-            android:icon="@mipmap/sharing"
-            android:title="share"
-             app:showAsAction="always"
-        />-->
+    <item
+        android:id="@+id/mail"
+        android:title="Send Message"
+        app:showAsAction="never" />
     <item
         android:id="@+id/about"
         android:title="About Us"
-        app:showAsAction="never"
-        />
+        app:showAsAction="never" />
     <item
         android:id="@+id/help"
         android:title="Help and Support"
-        app:showAsAction="never"
-        />
+        app:showAsAction="never" />
 
 
 </menu>

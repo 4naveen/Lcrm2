@@ -12,8 +12,8 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="250dp"
-            android:layout_height="250dp"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
             android:src="@drawable/slide2" />
 
         <TextView
@@ -21,19 +21,19 @@
             android:layout_height="wrap_content"
             android:text="Plan and manage your work"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/slide_title"
+            android:textSize="@dimen/slide_mob_title"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="5dp"
             android:paddingLeft="@dimen/desc_padding"
             android:paddingRight="@dimen/desc_padding"
             android:text="Schedule and excute events,calls and task with our app"
             android:textAlignment="center"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/slide_desc" />
+            android:textSize="@dimen/slide_mob_desc" />
 
     </LinearLayout>
 

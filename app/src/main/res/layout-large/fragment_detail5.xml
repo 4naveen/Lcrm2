@@ -1,0 +1,343 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.lorvent.lcrm.fragments.admin.details.SalesTeamDetailFragment">
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardCornerRadius="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+
+        android:layout_marginLeft="25dp"
+        card_view:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Sales Team Name"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text=":"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:id="@+id/salesteamName"
+                    android:textSize="20sp"
+                    android:textColor="#263238"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Invoice Target"
+                    android:textSize="20sp"
+                    android:textColor="#263238"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text=":"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+
+                    android:id="@+id/invoice_target"
+                    android:textSize="20sp"
+                    android:textColor="#263238"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Invoce Forecast"
+
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text=":"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:id="@+id/invoice_forecast"
+
+                    android:textSize="20sp"
+                    android:textColor="#263238"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Actual Invoice"
+
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text=":"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="4"
+                    android:textSize="20sp"
+                    android:id="@+id/actual_invoice"
+                    android:textColor="#263238"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Leads"
+
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text=":"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:id="@+id/leads"
+
+                    android:textSize="20sp"
+                    android:textColor="#263238"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Team Leader"
+
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text=":"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:id="@+id/team_leader"
+                    android:text="gfdgfgghghghh"
+                    android:textSize="20sp"
+                    android:textColor="#263238"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Opportunity"
+
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text=":"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="fhgfnhhmhmluf"
+                    android:id="@+id/opportnity"
+
+                    android:textSize="20sp"
+                    android:textColor="#263238"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Quatation"
+
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text=":"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Hfgfdgfgfgfhigh"
+                    android:id="@+id/quotation"
+                    android:textSize="20sp"
+                    android:textColor="#263238"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Created At"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text=":"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Jan 16,2016"
+                    android:id="@+id/created"
+                    android:textSize="20sp"
+                    android:textColor="#263238"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

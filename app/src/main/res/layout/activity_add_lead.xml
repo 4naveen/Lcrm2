@@ -1,131 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:id="@+id/layout"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".addactivity.AddLeadActivity">
+    tools:context=".activities.add.AddLeadActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
         android:layout_gravity="center_horizontal"
         android:orientation="vertical"
-        >
+        android:padding="10dp">
+
         <android.support.design.widget.TextInputLayout
             android:id="@+id/input_layout_opp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-        <EditText
-            android:id="@+id/opportnity"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:hint="@string/opportnity"
-            android:inputType="textNoSuggestions"
-            android:padding="10dp"
-            android:singleLine="true"
-            android:textColor="@color/input_login"
-            android:textColorHint="@color/input_login_hint" />
-</android.support.design.widget.TextInputLayout>
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/opportnity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/opportnity"
+                android:theme="@android:style/Theme.Holo.Light"
+
+                android:inputType="textNoSuggestions"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_login"
+                android:textColorHint="@color/input_login_hint" />
+        </android.support.design.widget.TextInputLayout>
+
         <android.support.design.widget.TextInputLayout
             android:id="@+id/input_layout_email"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-        <EditText
-            android:id="@+id/email"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:hint="email"
-            android:padding="10dp"
-            android:inputType="textEmailAddress"
-            android:singleLine="true"
-            android:textColor="@color/input_login"
-            android:textColorHint="@color/input_login_hint" />
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:theme="@android:style/Theme.Holo.Light"
+
+                android:singleLine="true"
+                android:textColor="@color/input_login"
+                android:textColorHint="@color/input_login_hint" />
         </android.support.design.widget.TextInputLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/input_layout_customer"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
+                android:layout_height="wrap_content">
 
-            <com.weiwangcn.betterspinner.library.BetterSpinner
-                android:id="@+id/company"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/activity_vertical_margin"
-                android:hint="Customer" />
+                <com.weiwangcn.betterspinner.library.BetterSpinner
+                    android:id="@+id/company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:hint="@string/customer" />
             </android.support.design.widget.TextInputLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/input_layout_country"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
+                android:layout_height="wrap_content">
 
                 <com.weiwangcn.betterspinner.library.BetterSpinner
                     android:id="@+id/country"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/activity_vertical_margin"
-                    android:hint="Country" />
+                    android:hint="@string/country" />
             </android.support.design.widget.TextInputLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/input_layout_sales_team"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
+                android:layout_height="wrap_content">
 
-            <com.weiwangcn.betterspinner.library.BetterSpinner
-                android:id="@+id/salesteam"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/activity_vertical_margin"
-                android:hint="salesTeam " /></android.support.design.widget.TextInputLayout>
+                <com.weiwangcn.betterspinner.library.BetterSpinner
+                    android:id="@+id/salesteam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:hint="@string/sales_team" />
+            </android.support.design.widget.TextInputLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/input_layout_salesperson"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
+                android:layout_height="wrap_content">
 
-            <com.weiwangcn.betterspinner.library.BetterSpinner
-                android:id="@+id/salesperson"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/activity_vertical_margin"
-                android:hint="Sales Person " /></android.support.design.widget.TextInputLayout>
+                <com.weiwangcn.betterspinner.library.BetterSpinner
+                    android:id="@+id/salesperson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:hint="@string/sales_person" />
+            </android.support.design.widget.TextInputLayout>
         </LinearLayout>
+
         <Button
             android:id="@+id/submit"
-            android:layout_width="300dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dip"
             android:background="@drawable/ripple_btn"
-            android:text="SUBMIT"
+            android:text="@string/submit"
             android:textColor="#ffffff"
             android:textSize="20sp" />
     </LinearLayout>
+    </ScrollView>
 </LinearLayout>

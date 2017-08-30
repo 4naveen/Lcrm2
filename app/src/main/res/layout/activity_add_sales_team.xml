@@ -6,18 +6,28 @@
     android:id="@+id/layout"
     android:padding="10dp"
     android:paddingTop="5dp">
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
     <android.support.design.widget.TextInputLayout
         android:id="@+id/input_layout_salesteam"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <EditText
             android:id="@+id/salesteamName"
             android:layout_width="match_parent"
             android:inputType="textNoSuggestions"
+            android:theme="@android:style/Theme.Holo.Light"
+
             android:layout_height="wrap_content"
-            android:hint="SalesTeam"
+            android:hint="@string/sales_team"
             android:singleLine="true" />
     </android.support.design.widget.TextInputLayout>
 
@@ -32,7 +42,9 @@
             android:id="@+id/invoice_target"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Invoice Target"
+            android:hint="@string/invoice_target"
+            android:theme="@android:style/Theme.Holo.Light"
+
             android:inputType="number"
             android:singleLine="true" />
     </android.support.design.widget.TextInputLayout>
@@ -46,7 +58,9 @@
             android:id="@+id/invoice_forecast"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Invoice Forecast"
+            android:hint="@string/invoice_forecast"
+            android:theme="@android:style/Theme.Holo.Light"
+
             android:inputType="number"
             android:singleLine="true" />
     </android.support.design.widget.TextInputLayout>
@@ -54,26 +68,25 @@
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:id="@+id/input_layout_team_leader"
-
         android:layout_height="wrap_content">
         <com.weiwangcn.betterspinner.library.BetterSpinner
             android:id="@+id/team_leader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:hint="TeamLeader " />
+            android:hint="@string/team_leader" />
     </android.support.design.widget.TextInputLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="5dp"
-        android:text="TeamMember" />
+        android:text="@string/team_member" />
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:id="@+id/input_layout_team_member"
         android:layout_height="wrap_content">
-    <com.project.naveen.lcrm.ContactsCompletionView
+    <com.project.lorvent.lcrm.utils.ContactsCompletionView
         android:id="@+id/searchView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -87,12 +100,14 @@
 </android.support.design.widget.TextInputLayout>
     <Button
         android:id="@+id/submit"
-        android:layout_width="300dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dip"
         android:background="@drawable/ripple_btn"
-        android:text="SUBMIT"
+        android:text="@string/submit"
         android:textColor="#ffffff"
         android:textSize="20sp" />
+            </LinearLayout>
+    </ScrollView>
 </LinearLayout>

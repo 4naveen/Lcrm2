@@ -1,185 +1,293 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/layout"
     android:orientation="vertical"
     android:padding="10dp">
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scrollbars="vertical">
+        android:scrollbars="none">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/input_layout_customer"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <com.weiwangcn.betterspinner.library.BetterSpinner
-                    android:id="@+id/customer"
-                    android:layout_width="match_parent"
-                    android:focusable="false"
-                    android:theme="@style/MyEditTextTheme"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:hint="Customer " />
-            </android.support.design.widget.TextInputLayout>
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.3"
+                    android:text="Invoice Date"
+                    android:textSize="20sp" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_invoice_date"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
 
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/input_layout_date"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
+                    android:layout_height="wrap_content">
                 <EditText
                     android:id="@+id/invoice_date"
                     android:layout_width="match_parent"
-                    android:theme="@style/MyEditTextTheme"
                     android:layout_height="wrap_content"
-                    android:hint="Invoice Date" />
-            </android.support.design.widget.TextInputLayout>
+                    android:layout_marginLeft="2dp"
+                    android:theme="@style/MyEditTextTheme" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
 
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/input_layout_exp_date"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.3"
+                    android:text="Due Date"                    android:layout_marginTop="20dp"
+
+                    android:textSize="20sp" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_due_date"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+
+                    android:layout_height="wrap_content">
                 <EditText
                     android:id="@+id/due_date"
                     android:layout_width="match_parent"
-                    android:theme="@style/MyEditTextTheme"
+
                     android:layout_height="wrap_content"
-                    android:hint="Due Date" />
-            </android.support.design.widget.TextInputLayout>
+                    android:layout_marginLeft="2dp"
+                    android:theme="@style/MyEditTextTheme" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
 
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/input_layout_pay_term"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.3"
+                    android:text="Customer"
+                    android:layout_marginTop="20dp"
+
+                    android:textSize="20sp" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_customer"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+
+                    android:layout_height="wrap_content">
+                <com.weiwangcn.betterspinner.library.BetterSpinner
+                    android:id="@+id/customer"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:theme="@style/MyEditTextTheme" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.3"
+                    android:text="Payment term"
+                    android:textSize="20sp" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_pay_term"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+
+                    android:layout_height="wrap_content">
                 <com.weiwangcn.betterspinner.library.BetterSpinner
                     android:id="@+id/pay_term"
-                    android:layout_width="match_parent"
-                    android:theme="@style/MyEditTextTheme"
-
                     android:layout_height="wrap_content"
-                    android:hint="Payment Term" />
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="match_parent"
 
-            </android.support.design.widget.TextInputLayout>
+                    android:theme="@style/MyEditTextTheme" />
+</android.support.design.widget.TextInputLayout>
+            </LinearLayout>
 
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/input_layout_salesperson"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.3"
+                    android:text="Sales Person"
+                    android:textSize="20sp" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_salesperson"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+
+                    android:layout_height="wrap_content">
                 <com.weiwangcn.betterspinner.library.BetterSpinner
                     android:id="@+id/salesperson"
                     android:layout_width="match_parent"
-                    android:theme="@style/MyEditTextTheme"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/activity_vertical_margin"
-                    android:hint="Sales Person " />
-            </android.support.design.widget.TextInputLayout>
+                    android:layout_marginLeft="2dp"
+                    android:theme="@style/MyEditTextTheme" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
 
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/input_layout_salesteam"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.3"
+                    android:text="Sales Team"
+                    android:textSize="20sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_salesteam"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content">
                 <com.weiwangcn.betterspinner.library.BetterSpinner
                     android:id="@+id/salesteam"
-                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:theme="@style/MyEditTextTheme"
+                    android:layout_width="match_parent"
                     android:layout_marginBottom="@dimen/activity_vertical_margin"
-                    android:hint="SalesTeam" />
-            </android.support.design.widget.TextInputLayout>
+                    android:layout_marginLeft="2dp"
+                    android:theme="@style/MyEditTextTheme" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
 
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/input_layout_status"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.3"
+                    android:text="Status"                    android:layout_marginTop="20dp"
+
+                    android:textSize="20sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_status"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+
+                    android:layout_height="wrap_content">
                 <com.weiwangcn.betterspinner.library.BetterSpinner
                     android:id="@+id/status"
                     android:layout_width="match_parent"
-                    android:theme="@style/MyEditTextTheme"
                     android:layout_height="wrap_content"
-                    android:hint="Status" />
-            </android.support.design.widget.TextInputLayout>
+                    android:layout_marginLeft="2dp"
+                    android:theme="@style/MyEditTextTheme" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
 
             <Button
                 android:id="@+id/add_products"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:textSize="20sp"
-                android:paddingTop="15dp"
-                android:background="@drawable/custom_edittext_bg"
-                android:text="Add Products"
-                android:textColor="#000" />
+                android:padding="2dp"
+                android:background="@drawable/btn_add"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
             <TableLayout
+                android:id="@+id/table_products"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="5dp"
                 android:divider="@color/bg_register"
-                android:id="@+id/table_products"
+                android:paddingTop="5dp"
                 android:stretchColumns="*">
+
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#fff"
-                    >
+                    android:background="#fff">
+
                     <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:background="@drawable/cell_shape"
+
                         android:text="Product"
+                        android:textColor="#000000" />
+
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="3dp"
-                        android:textColor="#000000"
-                        />
-
-                    <TextView
                         android:text="Quantity"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="3dp"
+                        android:background="@drawable/cell_shape"
                         android:textColor="#000000"
 
                         />
+
                     <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
                         android:text="Unit Price"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="3dp"
+                        android:background="@drawable/cell_shape"
                         android:textColor="#000000"
 
                         />
 
                     <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
                         android:text="Sub Total"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="3dp"
+                        android:background="@drawable/cell_shape"
                         android:textColor="#000000"
 
                         />
-                    <TextView
+
+             <!--       <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
                         android:text="description"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="3dp"
                         android:textColor="#000000"
-
-                        />
+                        />-->
 
                     <TextView
-                        android:text="Edit"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="3dp"
+                        android:text="Delete"
+                        android:background="@drawable/cell_shape"
                         android:textColor="#000000"
 
                         />
@@ -195,11 +303,11 @@
                 <EditText
                     android:id="@+id/total"
                     android:layout_width="match_parent"
-                    android:theme="@style/MyEditTextTheme"
+                    android:layout_height="wrap_content"
                     android:editable="false"
 
-                    android:layout_height="wrap_content"
-                    android:hint="Total" />
+                    android:hint="Total"
+                    android:theme="@style/MyEditTextTheme" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -210,11 +318,11 @@
                 <EditText
                     android:id="@+id/tax"
                     android:layout_width="match_parent"
-                    android:theme="@style/MyEditTextTheme"
+                    android:layout_height="wrap_content"
                     android:editable="false"
 
-                    android:layout_height="wrap_content"
-                    android:hint="Tax Amount(10%)" />
+                    android:hint="Tax Amount(10%)"
+                    android:theme="@style/MyEditTextTheme" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -226,11 +334,11 @@
                 <EditText
                     android:id="@+id/gtotal"
                     android:layout_width="match_parent"
-                    android:theme="@style/MyEditTextTheme"
+                    android:layout_height="wrap_content"
                     android:editable="false"
 
-                    android:layout_height="wrap_content"
-                    android:hint="Grand total" />
+                    android:hint="Grand total"
+                    android:theme="@style/MyEditTextTheme" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -242,9 +350,9 @@
                     android:id="@+id/discount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:theme="@style/MyEditTextTheme"
                     android:editable="false"
-                    android:hint="Discount(%)" />
+                    android:hint="Discount(%)"
+                    android:theme="@style/MyEditTextTheme" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -255,20 +363,20 @@
                 <EditText
                     android:id="@+id/final_price"
                     android:layout_width="match_parent"
-                    android:theme="@style/MyEditTextTheme"
-                    android:editable="false"
                     android:layout_height="wrap_content"
-                    android:hint="Final price" />
+                    android:editable="false"
+                    android:hint="Final price"
+                    android:theme="@style/MyEditTextTheme" />
             </android.support.design.widget.TextInputLayout>
 
             <Button
                 android:id="@+id/submit"
-                android:layout_width="300dp"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dip"
                 android:background="@drawable/ripple_btn"
-                android:text="SUBMIT"
+                android:text="SAVE"
                 android:textColor="#ffffff"
                 android:textSize="20sp" />
         </LinearLayout>

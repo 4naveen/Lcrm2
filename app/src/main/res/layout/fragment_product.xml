@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,17 +10,14 @@
         android:id="@+id/tab_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:background="?attr/colorPrimary"
-        android:layout_marginTop="65dp"
-
         app:tabTextColor="#ffffff"
+        app:tabMinWidth="800dp"
+        android:layout_marginTop="65dp"
         app:tabIndicatorHeight="3dp"
-
         app:tabMode="fixed"
+        style="@style/MyCustomTabLayout"
         app:tabSelectedTextColor="#ffffff"
-         app:tabMinWidth="800dp"
-
         />
     <!--style="@style/MyCustomTabLayout"-->
     <android.support.v4.view.ViewPager
